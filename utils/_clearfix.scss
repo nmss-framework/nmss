@@ -1,0 +1,21 @@
+/*_ UTILS  _____________________________________________________________________________________________________________
+    
+    Clearfix
+
+    Thanks! http://nicolasgallagher.com/micro-clearfix-hack/
+
+*/
+//_ DEFINITION _________________________________________________________________________________________________________
+
+.cf:before,
+.cf:after,
+%cf:before,
+%cf:after{
+    content: " ";
+    display: table;
+}
+
+.cf:after,
+%cf:after {
+    clear: both;
+}

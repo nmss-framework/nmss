@@ -1,0 +1,101 @@
+/*_ UNITS ______________________________________________________________________________________________________________
+    
+    Input 
+
+    By default this is a material design like input, only bottom borders
+    are shown */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+    $input-padding:                             0                                       !default;
+    $input-text-border-width:                   0                                       !default;
+    $input-text-border-color:                   0                                       !default;
+    $input-text-border-style:                   none                                    !default;
+    
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+.input {
+
+    border: 0;
+    width: 100%;
+
+    &[type="text"], 
+    &[type="search"], 
+    &[type="email"],
+    &[type="date"],
+    &[type="phone"]
+     {
+        padding:      $input-padding;
+        border-width: $input-text-border-width;
+        border-color: $input-text-border-color;
+        border-style: $input-text-border-style;
+        
+        background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, 
+                    bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, 
+                    bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
+        
+        background-size: 1px 6px, 1px 1px, 1px 6px;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+
+    &[type="radio"] {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
+
+    &[type="checkbox"] {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        top: 0.1rem;
+        position: relative;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  Variations descriptions */
+
+.ng-invalid {
+
+    &[type="text"], 
+    &[type="search"], 
+    &[type="email"],
+    &[type="date"],
+    &[type="phone"]
+     {
+        background: bottom left linear-gradient(#C00, #C00) no-repeat, 
+                    bottom center linear-gradient(#C00, #C00) repeat-x, 
+                    bottom right linear-gradient(#C00, #C00) no-repeat,
+                    url('../img/icon_warning.svg') 97% center no-repeat;
+        background-size: 1px 6px, 1px 1px, 1px 6px, 1rem 1rem;
+    }
+}
+
+.ng-invalid-required {
+    &[type="text"], 
+    &[type="search"], 
+    &[type="email"],
+    &[type="date"],
+    &[type="phone"]
+     {
+        background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, 
+                    bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, 
+                    bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat,
+                    url('../img/icon_required.svg') 97% center no-repeat;
+        
+        background-size: 1px 6px, 1px 1px, 1px 6px, 1rem 1rem;
+    }
+}

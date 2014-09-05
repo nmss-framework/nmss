@@ -1,0 +1,129 @@
+/*_ THEMES _____________________________________________________________________________________________________________
+    
+    Prototype
+
+    base theme of the framework, change as you wish */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//  Defaults
+    
+    $body-background-color:                     #232323;
+    
+    $color-primary:                             #f9d606;
+    $color-primary-dark:                        darken($color-primary, 10%);
+    $color-primary-darker:                      darken($color-primary, 20%);
+
+    $color-primary-contrast:                    #262b38;
+
+    $color-secondary:                           #854785;
+
+//  Type
+
+    $type-family-primary:                       "Source Sans Pro";
+    $type-display2-size:                        2.8em;
+    $type-display1-size:                        1.999em;
+    $type-title-size:                           1.4em;
+    $type-subtitle-size:                        1.2em;
+    $type-body-size:                            1.1em;
+    $type-data-size:                            0.9em;
+    
+    $type-headline-size:                        1.4em;
+    $type-subheadline-size:                     1em;
+    
+    $type-paragraph-lineheight:                 1.414em;
+        
+    $type-color-primary:                        rgba(0,0,0,0.87);
+    $type-color-secondary:                      rgba(0,0,0,0.54);
+    
+    $type-data-color:                           #666;
+
+
+//_ Units ______________________________________________________________________________________________________________
+
+//  Button
+
+    $button-border:                             1px solid rgba(255, 255, 255, 0.5);
+    $button-padding:                            0.6rem 1rem;
+    $button-border-radius:                      0.2em;
+    $button-text-transform:                     uppercase;
+    $button-background:                         $color-primary;
+    $button-color:                              $color-primary-contrast;
+    
+    $button--flat-border-style:                 none;
+    $button--flat-border-width:                 0;
+    $button--flat-border-color:                 $color-primary-contrast;
+    $button--flat-background:                   transparent;
+    $button--flat-color:                        $color-primary-dark;
+    $button--flat-padding:                      0.6rem 0;
+    
+//  Input outline-offset:   ;
+    
+    $input-padding:                             0.6rem;
+    $input-text-border-width:                   0;
+    $input-text-border-color:                   transparent;
+    $input-text-border-style:                   none;
+
+//  Offcanvas
+
+    $offcanvas-offset:                          15.4rem;
+    $offcanvas-transition:                      300ms all;
+    
+    $offcanvas-menu-background-color:           $color-primary;
+    
+    $offcanvas-menu-item-color:                 #36273a;
+    $offcanvas-menu-item-text-decoration:       none;
+    $offcanvas-menu-item-padding:               1rem;
+    $offcanvas-menu-item-box-shadow:            0 1px 0 0 rgba(0, 0, 0, 0.1);
+    
+    $offcanvas-content-padding:                 0rem;
+    $offcanvas-content-background-color:        $body-background-color;
+    $offcanvas-content-box-shadow:              0 0 5px 0 rgba(0,0,0,0.4);
+    
+    $offcanvas-topbar-background-color:         transparent;
+    $offcanvas-topbar-color:                    #FFF;
+    $offcanvas-topbar-border-radius:            0;
+    $offcanvas-topbar-min-height:               0;
+    $offcanvas-topbar-padding:                  0.5rem;
+    $offcanvas-topbar-fullwidth:                false;
+
+//  Figure - Configuration
+
+    $figure-offset:                             18rem;
+    $figure-transition:                         300ms all;
+   
+    $figure-caption-inside-background:          linear-gradient
+                                                (   
+                                                    5deg,
+                                                    rgba(0, 0, 0, 0.3) 0%, 
+                                                    rgba(0, 0, 0, 0) 100%
+                                                );
+    
+    $figure-caption-inside-color:               #FFF;
+    $figure-caption-inside-padding:             0.5rem;
+    $figure-image--round-diameter:              8rem;
+    
+//  Card:   ;
+    
+    $card-background-color:                     #FFF;
+    $card-box-shadow:                           none;
+    
+    $card-margin:                               0;
+    $card-border-width:                         0 0 4px 0;
+    $card-border-style:                         solid;
+    
+//  Select:     ;
+    
+    $select-border:                             1px solid rgba(0,0,0,0.2);
+    $select-padding:                            0.5rem;
+    $select-border-radius:                      0.5rem;
+    $select-text-transform:                     uppercase;
+    $select-background:                         transparent;
+    $select-color:                              $color-primary-contrast;
+    
+//  Label outline-offset:   ;
+    
+    $label-padding:                             0.6rem 0;
+    $label-border-width:                        0;
+    $label-border-color:                        transparent;
+    $label-border-style:                        none;

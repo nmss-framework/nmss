@@ -1,0 +1,46 @@
+/*_ MODULES ____________________________________________________________________________________________________________
+    
+    breakpoints
+
+    Add a rule at a certain breakpoint with this mixin, also creates visibility utils for each breakpoint */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+    $breakpoints:(                              landscape: 321px );
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+//Breakpoints
+
+@mixin addMedia($bkName,$bkSize) {
+    @media screen and (min-width: $bkSize) {
+        @content;
+    }
+}
+
+@mixin addBreakpoint($currentBkName) {
+
+    @each $bkName, $bkSize in $breakpoints {
+
+        @if ($currentBkName == $bkName) {
+            //For every breakpoint defined in variables
+            @include addMedia($bkName,$bkSize) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin createBreackpointVisivility() {
+
+    @each $bkName, $bkSize in $breakpoints {
+
+        @include addMedia($bkName,$bkSize) {
+            .u-hide\[#{$bkName}\] {
+                display: none;
+            }
+        }
+    }
+}
+
+@include createBreackpointVisivility();

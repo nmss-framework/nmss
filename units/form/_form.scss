@@ -1,0 +1,61 @@
+/*_ UNITS ______________________________________________________________________________________________________________
+    
+    Form
+
+    Form wrapper to align elements and modify their behaviour, mainly input and 
+    label  */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//  #TODO
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .form {
+
+        &-group {
+            margin-bottom: 2rem;
+            position: relative;
+            min-height: 2.5rem;
+            @extend %cf;
+
+            .label {
+                display: block;
+
+                &--radio, &--select, &--checkbox {
+                    font-weight: 700;
+                }
+
+                &--checkbox input {
+                    float: left;
+                }
+            }
+
+            input ~ .label {
+                position: absolute;
+                top: 0;
+            }
+
+            .input:focus ~ label, .input:valid ~ label, .input[type="date"] ~ label{
+                top: -1.5rem;
+                font-weight: 700;
+            }
+
+        }
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  form--inline:   throws label into inline-block behaviour 
+    #TODO input behaviour */
+
+    .form {
+
+        &--inline {
+            .label {
+                display: inline-block;
+            }            
+        }
+    }
+
+

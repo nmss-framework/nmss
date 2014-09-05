@@ -1,0 +1,27 @@
+/*_ MODULES ____________________________________________________________________________________________________________
+    
+    alert
+
+    System messages shown on top as errors to be handled by the user */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//  property                                    value                                   !default;
+
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .alert {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(204, 0, 0, 0.9);
+        padding: 1rem;
+        color: #FFF;
+        font-size: 0.9rem;
+        top: 0;
+        box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  Variations descriptions */

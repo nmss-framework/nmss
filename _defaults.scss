@@ -1,0 +1,68 @@
+/*_ DEFAULTS ___________________________________________________________________________________________________________
+    
+    Overrides normalize
+
+*/
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+    $body-background-color:                     #232323                                 !default;
+    
+    $color-primary:                             #FF6644                                 !default;
+    $color-primary-dark:                        darken($color-primary, 10%)             !default;
+    $color-primary-darker:                      darken($color-primary, 20%)             !default;
+
+    $color-primary-contrast:                    #262b38                                 !default;
+
+    $color-secondary:                           #854785                                 !default;
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    *, *:before, *:after {
+      -webkit-box-sizing: border-box; 
+         -moz-box-sizing: border-box; 
+              box-sizing: border-box;
+    }
+
+/*  reset-boundaries
+    Resets bold styles and browser opinion on line height */
+
+    %reset-boundaries {
+        padding: 0;
+        margin: 0;
+        font-weight: normal;                 
+        line-height: 1;                      
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    html, body {
+        font-size: 100%;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        background-color: $body-background-color;
+    }
+
+    ul, li, button,h1,h2,h3,h4,h5,h6,p,input {
+        @extend %reset-boundaries;
+    }
+
+    a {
+        color: inherit;
+    }
+
+//  Responsive images by default
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block
+    }
+
+
+

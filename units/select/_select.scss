@@ -1,0 +1,45 @@
+/*_ UNITS ______________________________________________________________________________________________________________
+    
+    Select
+
+    Common select patterns */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+    $select-border:                             1px solid rgba(0,0,0,0.2)               !default;
+    $select-padding:                            0.5rem                                  !default;
+    $select-border-radius:                      0.5rem                                  !default;
+    $select-text-transform:                     uppercase                               !default;
+    $select-background:                         transparent                             !default;
+    $select-color:                              $color-primary-contrast                 !default;
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+.select {
+
+    vertical-align: top;
+    line-height:    $input-padding * 2.22;     
+
+    padding:        $select-padding;
+    border:         $select-border;
+    outline:        none;
+    border-radius:  $select-border-radius;
+    background:     $select-background;
+    color:          $select-color;
+
+    text-transform: $select-text-transform;
+
+    display: inline-block;
+    max-width: 100%;
+}
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  select--full:   full width select */
+
+    .select {
+        &--full {
+            display: block;
+            width: 100%;
+        }
+    }

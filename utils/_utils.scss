@@ -1,0 +1,179 @@
+/*_ UTILS  _____________________________________________________________________________________________________________
+    
+    Common layout utilities following emmet sintax
+
+*/
+//_ DEFINITION _________________________________________________________________________________________________________
+
+// Text align
+
+    .u-tac {
+        text-align: center;
+        display: block;
+    }
+
+    .u-tar {
+        text-align: right;
+        display: block;
+    }
+    .u-ttu {
+        text-transform: uppercase;    
+    }
+
+// Margins
+
+    .u-m {
+        margin: 1rem;
+    }
+
+    .u-m\[1\/2\] {
+        margin: 0.5rem;
+    }    
+
+    .u-mgl {
+        margin-left: 1rem;
+    }
+
+    .u-mgr {
+        margin-right: 1rem;
+    }
+
+    .u-mgr\[1\/2\] {
+        margin-right: 0.5rem;
+    }
+
+    .u-mgr\[2x\] {
+        margin-right: 2rem;
+    }
+
+    .u-m--half {
+        margin: 0.5rem;
+    }
+
+    .u-db {
+        display: block;
+    }
+    .u-dib {
+        display: inline-block;
+    }
+
+    .u-mgt--half {
+        margin-top: 0.5rem;
+    }
+
+    .u-mgt\[1\/2\] {
+        margin-top: 0.5rem;
+    }    
+
+    .u-mgt {
+        margin-top: 1rem;
+    }
+
+    .u-mgt\[2x\] {
+        margin-top: 2rem;
+    }    
+
+    .u-mgb {
+        margin-bottom: 1rem;
+    }
+
+    .u-mgb\[2x\] {
+        margin-bottom: 2rem;
+    }
+
+    .u-mgv {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .u-mgv\[2x\] {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .u-flr {
+        float: right;
+    }
+
+    .u-fl {
+        float: left;
+    }
+
+    .u-pointer {
+        cursor: pointer;
+    }
+
+    .u-mgr--half {
+        margin-right: 0.5rem;
+    }
+
+    .u-outline {
+        outline: 5px solid red;
+        display: block;
+    }
+
+//  Text Align
+    .u-tac {
+        text-align: center;
+    }
+
+    .u-tar {
+        text-align: right;
+    }
+
+    .u-divide {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+// Paddings
+
+    .u-p {
+        padding: 1rem;
+    }
+
+    .u-p\[1\/2\] {
+        padding: 0.5rem;
+    }
+
+    .u-p\[2x\] {
+        padding: 2rem;
+    }
+
+    .u-pdv\[2x\] {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .u-pdt {
+        padding-top: 1rem;
+    }
+
+    .u-pdt\[1\/2\] {
+        padding-top: 0.5rem;
+    }    
+
+    .u-pdt\[2x\] {
+        padding-top: 2rem;
+    }
+
+    .u-pdb {
+        padding-bottom: 1rem;
+    }
+    .u-posr {
+        position: relative;    
+    }
+
+//  Display
+
+    .u-dn {
+        display: none;
+    }
+
+    .u-db {
+        display: block !important;
+    }
+
+//  Vertical text align
+    .u-vam {
+        vertical-align: middle !important;
+    }

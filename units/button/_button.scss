@@ -1,0 +1,83 @@
+/*_ UNITS ______________________________________________________________________________________________________________
+    
+    Button 
+
+    Common button patterns */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+    $button-border:                             0                                       !default;
+    $button-padding:                            0                                       !default;
+    $button-border-radius:                      0                                       !default;
+    $button-text-transform:                     uppercase                               !default;
+    $button-background:                         $color-primary                          !default;
+    $button-color:                              $color-primary-contrast                 !default;
+
+    $button--flat-border-style:                 solid                                   !default;
+    $button--flat-border-width:                 1px                                     !default;
+    $button--flat-border-color:                 $color-primary-contrast                 !default;
+    $button--flat-background:                   transparent                             !default;
+    $button--flat-color:                        $color-primary-contrast                 !default;
+    $button--flat-padding:                      0                                       !default;
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .button {
+        vertical-align: top;
+        line-height: $input-padding * 2.22;     
+        padding: $button-padding;
+        border: $button-border;
+        outline: none;
+        border-radius: $button-border-radius;
+        background: $button-background;
+        color: $button-color;
+        font-weight: 600;
+        text-transform: $button-text-transform;
+        display: inline-block;
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  button--full:       Fills all the available space
+    button--round:      Circular button as in Material Design
+    button--flat:       Non beveled button, used mainly as secondary button
+    button--disabled:   Disabled button state
+    button--inline:     Button as inline text, similar to <a> */
+
+    .button {
+
+        &--full {
+            display: block;
+            width: 100%;
+        }
+
+        &--round {
+            border-radius: 100%;
+            line-height: 1;
+            padding: 1rem;
+        }
+
+        &--flat {
+            background: $button--flat-background;
+            border-style: $button--flat-border-style;
+            border-width: $button--flat-border-width;
+            border-color: $button--flat-border-color;
+            color:  $button--flat-color;
+            padding: $button--flat-padding;
+            font-weight: 600;
+        }
+
+        &--inline {
+            padding: 0;
+        }
+
+        &--inverse {
+            color: #FFF;
+        }
+
+        &--disabled {
+            background: #CCC;
+            color: #888;
+        }
+    }
+
