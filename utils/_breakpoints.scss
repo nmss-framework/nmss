@@ -2,11 +2,11 @@
     
     breakpoints
 
-    Add a rule at a certain breakpoint with this mixin, also creates visibility utils for each breakpoint */
+    Add a rule at a certain breakpoint with this mixin */
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $breakpoints:(                              landscape: 321px );
+    $breakpoints:(                              landscape: 320px );
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
@@ -27,20 +27,12 @@
             @include addMedia($bkName,$bkSize) {
                 @content;
             }
-        }
-    }
-}
 
-@mixin createBreackpointVisivility() {
-
-    @each $bkName, $bkSize in $breakpoints {
-
-        @include addMedia($bkName,$bkSize) {
-            .u-hide\[#{$bkName}\] {
-                display: none;
+            @include addMedia($bkName,$bkSize) {
+                .u-hide\[#{$bkName}\] {
+                    display: none;
+                }
             }
         }
     }
 }
-
-@include createBreackpointVisivility();

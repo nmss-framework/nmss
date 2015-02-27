@@ -23,6 +23,13 @@
         margin:         $card-margin;
         border-width:   $card-border-width;
         border-style:   $card-border-style;
+        cursor:         pointer;
+        transition:     all 200ms ease-out;
+
+        &:hover {
+            transform: translateY(-8px);
+        }
+
     }
 
 //_ VARIATIONS _________________________________________________________________________________________________________

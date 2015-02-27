@@ -63,6 +63,16 @@ ___ UNITS ______________________________________________________________________
 
     label               Common label patterns
 
+    anchor              link styling
+
+    switch              switches!
+
+    tooltip             tooltips!
+
+    optionGroup         radio groups as nice options
+
+    badges              badges
+
 */
 
 //_ DEFAULTS ___________________________________________________________________________________________________________
@@ -82,8 +92,7 @@ ___ UNITS ______________________________________________________________________
 
 @import "utils/utils",
         "utils/clearfix",
-        "utils/loader",
-        "utils/breakpoints",
+        "utils/loader",        
         "utils/proportions";
 
 //_ UNITS ______________________________________________________________________________________________________________
@@ -92,13 +101,20 @@ ___ UNITS ______________________________________________________________________
         "units/form/form",
         "units/input/input",
         "units/nav/nav",
-        "units/grid/grid",
         "units/tab/tab",
+        "units/steps/steps",
+        "units/grid/grid",
+        "units/icon/icon",
         "units/offcanvas/offcanvas",
         "units/figure/figure",
         "units/card/card",
+        "units/pagination/pagination",
         "units/alert/alert",
         "units/table/table",
         "units/select/select",
-        "units/label/label";
-
+        "units/badges/badges",
+        "units/label/label",
+        "units/tooltip/tooltip",
+        "units/anchor/anchor",
+        "units/switch/switch",
+        "units/optionGroup/optionGroup";

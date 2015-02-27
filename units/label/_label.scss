@@ -20,9 +20,8 @@
     border-width: $label-border-width;
     border-color: $label-border-color;
     border-style: $label-border-style;
-
+    position: relative;
+    @extend %type-ui;
 }
 
 //_ VARIATIONS _________________________________________________________________________________________________________
-
-/*  Variations descriptions */

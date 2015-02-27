@@ -15,21 +15,28 @@
 
         &-tr {
 
+            border-top: 1px solid rgba(0,0,0,0.025);
+
+            &:first-child {
+                border-top: none;
+            }
+
+            .table-td:first-child, .table-th:first-child {
+                padding-left: 1rem;
+            }
+
         }
 
         &-th {
             text-align: left;
-            padding: 0.5rem;
             vertical-align: middle;
             font-weight: 600;
         }
 
         &-td {
             text-align: left;
-            padding: 0.5rem;
             vertical-align: middle;
             height: 3.2rem;
-            border-top: 1px solid rgba(0,0,0,0.05);
         }
 
         &-ov {
@@ -58,7 +65,42 @@
             }
         }
 
+        &--interactive {
+
+            .table-tr:hover {
+
+                background: rgba(255,255,255,0.7);
+                cursor: pointer;
+
+            }
+
+            thead {
+
+                .table-tr {
+                    border:0;
+                }
+
+                .table-tr:hover {
+                    background: transparent;
+                    cursor: default;
+                }
+            }
+        }
+
         &--fixed {
             table-layout: fixed;
+        }
+
+        &--borderless {
+
+            .table-tr {
+
+                border-top: none;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+            }            
         }
     }

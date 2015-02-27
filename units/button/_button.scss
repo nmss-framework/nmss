@@ -1,6 +1,6 @@
 /*_ UNITS ______________________________________________________________________________________________________________
-    
-    Button 
+
+    Button
 
     Common button patterns */
 
@@ -11,29 +11,49 @@
     $button-border-radius:                      0                                       !default;
     $button-text-transform:                     uppercase                               !default;
     $button-background:                         $color-primary                          !default;
-    $button-color:                              $color-primary-contrast                 !default;
+    $button-hover-background:                   lighten($color-primary, 10%)            !default;
+    $button-color:                              $color-primary-darker                   !default;
+    $button-font-weight:                        600                                     !default;
 
     $button--flat-border-style:                 solid                                   !default;
     $button--flat-border-width:                 1px                                     !default;
     $button--flat-border-color:                 $color-primary-contrast                 !default;
     $button--flat-background:                   transparent                             !default;
-    $button--flat-color:                        $color-primary-contrast                 !default;
-    $button--flat-padding:                      0                                       !default;
+    $button--flat-color:                        $color-primary-dark                     !default;
+    $button--flat-padding:                      0 1rem                                  !default;
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
     .button {
+
         vertical-align: top;
-        line-height: $input-padding * 2.22;     
+        outline: none;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        line-height: 1rem;
+
         padding: $button-padding;
         border: $button-border;
-        outline: none;
         border-radius: $button-border-radius;
-        background: $button-background;
+        background: no-repeat center center $button-background;
         color: $button-color;
-        font-weight: 600;
+        font-weight: $button-font-weight;
         text-transform: $button-text-transform;
-        display: inline-block;
+
+        transition: all 300ms ease-out;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        box-shadow: 0 1px 0px $button-background;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        background-size: auto, 10%;
+
+        &:hover {
+            background: no-repeat center center lighten($button-background, 20%);
+            background-size: auto, 10%;
+            box-shadow: 0 1px 0px $button-background;
+        }
+
     }
 
 //_ VARIATIONS _________________________________________________________________________________________________________
@@ -41,7 +61,6 @@
 /*  button--full:       Fills all the available space
     button--round:      Circular button as in Material Design
     button--flat:       Non beveled button, used mainly as secondary button
-    button--disabled:   Disabled button state
     button--inline:     Button as inline text, similar to <a> */
 
     .button {
@@ -64,20 +83,62 @@
             border-color: $button--flat-border-color;
             color:  $button--flat-color;
             padding: $button--flat-padding;
-            font-weight: 600;
+            text-shadow: none;
+            box-shadow: none;
         }
 
         &--inline {
             padding: 0;
         }
 
-        &--inverse {
-            color: #FFF;
+        &--disabled {
+            background: #f0f0f0;
+            color: #CCC;
+            text-shadow: none;
+            border: 1px solid rgba(0,0,0,0.1);
+            box-shadow: 0 1px 0px #f0f0f0;
+
+            &:hover {
+                background: #f0f0f0;
+                box-shadow: 0 1px 0px #f0f0f0;
+            }
         }
 
-        &--disabled {
-            background: #CCC;
-            color: #888;
+        &--download {
+            background: #9ac695;
+            box-shadow: 0 1px 0px #9ac695;
         }
     }
 
+//_ ANGULAR ONLY _______________________________________________________________________________________________________
+
+    .button.async-sending {
+        color: transparent;
+        background: url("../img/loader_white.svg") no-repeat center center $color-warning;
+        background-size: auto, 10%;
+        pointer-events: none;
+    }
+
+    .button.async-success {
+        color: transparent;
+        background: url("../img/success.svg") no-repeat center center $color-success;
+        background-size: auto, 10%;
+        pointer-events: none;
+        transition: all 0;
+    }
+
+    .button.async-error {
+        color: #FFF;
+        background:no-repeat center center $color-error;
+        background-size: auto, 10%;
+        pointer-events: none;
+        @extend .shake;
+    }
+
+    .button.async-block {
+        color: transparent;
+        background: url("../img/loader.svg") no-repeat center center #DDD;
+        background-size: auto, 10%;
+        pointer-events: none;
+        transition: all 0;
+    }

@@ -11,6 +11,7 @@
     $input-text-border-width:                   0                                       !default;
     $input-text-border-color:                   0                                       !default;
     $input-text-border-style:                   none                                    !default;
+    $input-text-border-radius:                  0                                       !default;
     
 
 //_ DEFINITION _________________________________________________________________________________________________________
@@ -19,24 +20,28 @@
 
     border: 0;
     width: 100%;
+    color: #666;
+    height: 2.5rem;
+    font-size: 1rem;
+
+    &:focus {
+        outline: 1px solid $color-hint-light;
+        outline-offset: -1px;
+    }
 
     &[type="text"], 
     &[type="search"], 
     &[type="email"],
     &[type="date"],
+    &[type="password"],
     &[type="phone"]
      {
-        padding:      $input-padding;
-        border-width: $input-text-border-width;
-        border-color: $input-text-border-color;
-        border-style: $input-text-border-style;
+        padding:        $input-padding;
+        border-width:   $input-text-border-width;
+        border-color:   $input-text-border-color;
+        border-style:   $input-text-border-style;
+        border-radius:  $input-text-border-radius;
         
-        background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, 
-                    bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, 
-                    bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
-        
-        background-size: 1px 6px, 1px 1px, 1px 6px;
-        background-color: transparent;
         box-sizing: border-box;
     }
 
@@ -46,56 +51,26 @@
         height: 1.2rem;
         vertical-align: middle;
         margin-right: 0.5rem;
+        box-shadow: none;
     }
 
     &[type="checkbox"] {
         display: inline-block;
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1rem;
+        height: 1rem;
         vertical-align: middle;
-        margin-right: 0.5rem;
         top: 0.1rem;
         position: relative;
+        float: left;
+        margin-right: 0.5rem;
     }
 
-    &:focus {
-        outline: none;
+    &[readonly], &[disabled] {
+        color: #CCC;
+        background: #fcfcfc !important;
+        border: 1px solid #eee !important;
     }
 
 }
 
 //_ VARIATIONS _________________________________________________________________________________________________________
-
-/*  Variations descriptions */
-
-.ng-invalid {
-
-    &[type="text"], 
-    &[type="search"], 
-    &[type="email"],
-    &[type="date"],
-    &[type="phone"]
-     {
-        background: bottom left linear-gradient(#C00, #C00) no-repeat, 
-                    bottom center linear-gradient(#C00, #C00) repeat-x, 
-                    bottom right linear-gradient(#C00, #C00) no-repeat,
-                    url('../img/icon_warning.svg') 97% center no-repeat;
-        background-size: 1px 6px, 1px 1px, 1px 6px, 1rem 1rem;
-    }
-}
-
-.ng-invalid-required {
-    &[type="text"], 
-    &[type="search"], 
-    &[type="email"],
-    &[type="date"],
-    &[type="phone"]
-     {
-        background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, 
-                    bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, 
-                    bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat,
-                    url('../img/icon_required.svg') 97% center no-repeat;
-        
-        background-size: 1px 6px, 1px 1px, 1px 6px, 1rem 1rem;
-    }
-}

@@ -1,16 +1,15 @@
 /*_ UNITS ______________________________________________________________________________________________________________
-    
+
     Select
 
     Common select patterns */
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $select-border:                             1px solid rgba(0,0,0,0.2)               !default;
+    $select-border:                             1px solid rgba(0, 0, 0, 0.1)            !default;
     $select-padding:                            0.5rem                                  !default;
-    $select-border-radius:                      0.5rem                                  !default;
-    $select-text-transform:                     uppercase                               !default;
-    $select-background:                         transparent                             !default;
+    $select-border-radius:                      0                                       !default;
+    $select-background:                         #FFFFFF                                 !default;
     $select-color:                              $color-primary-contrast                 !default;
 
 //_ DEFINITION _________________________________________________________________________________________________________
@@ -18,7 +17,7 @@
 .select {
 
     vertical-align: top;
-    line-height:    $input-padding * 2.22;     
+    line-height:    $input-padding * 2.22;
 
     padding:        $select-padding;
     border:         $select-border;
@@ -26,11 +25,15 @@
     border-radius:  $select-border-radius;
     background:     $select-background;
     color:          $select-color;
-
-    text-transform: $select-text-transform;
-
     display: inline-block;
-    max-width: 100%;
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+
+    &:focus {
+        outline: 1px solid $color-hint-light;
+        outline-offset: -1px;
+    }
 }
 
 //_ VARIATIONS _________________________________________________________________________________________________________

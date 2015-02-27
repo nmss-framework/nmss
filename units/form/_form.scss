@@ -14,33 +14,37 @@
     .form {
 
         &-group {
-            margin-bottom: 2rem;
+            margin-bottom: 0.5rem;
             position: relative;
-            min-height: 2.5rem;
             @extend %cf;
 
             .label {
                 display: block;
+                color: #565656;
 
-                &--radio, &--select, &--checkbox {
-                    font-weight: 700;
-                }
-
-                &--checkbox input {
-                    float: left;
+                &[for]:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
                 }
             }
 
-            input ~ .label {
-                position: absolute;
-                top: 0;
+            .label-optional {
+                font-style: italic;
+                color: #999;
             }
 
-            .input:focus ~ label, .input:valid ~ label, .input[type="date"] ~ label{
-                top: -1.5rem;
-                font-weight: 700;
-            }
+        }
 
+        &-combo {
+            font-size: 0;
+        }
+
+        &-section {
+            background: #f0f0f0;
+            border-radius: 2px;
+            padding: 1rem;
+            border: 1px solid #e0e0e0;
+            @extend %cf;
         }
     }
 
@@ -59,3 +63,23 @@
     }
 
 
+//  ANGULAR SPECIFIC ___________________________________________________________________________________________________
+
+    .ng-invalid-pattern.ng-dirty,
+    .ng-invalid-email.ng-dirty,
+    .ng-invalid-minlength.ng-dirty,
+    .ng-invalid-maxlength.ng-dirty {
+
+        &[type="text"], 
+        &[type="email"],
+        &[type="date"],
+        &[type="password"],
+        &[type="phone"]
+         {
+            // background: url("../img/icon_invalid.svg") 99% center no-repeat;
+            // background-size: 2rem 2rem;
+            // background-color: #FEE;
+            // border: 1px solid rgba(253, 224, 129, 0.5);
+            border-bottom:2px solid $color-error;
+        }
+    }

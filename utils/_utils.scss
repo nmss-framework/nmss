@@ -8,13 +8,11 @@
 // Text align
 
     .u-tac {
-        text-align: center;
-        display: block;
+        text-align: center !important;
     }
 
     .u-tar {
-        text-align: right;
-        display: block;
+        text-align: right !important;
     }
     .u-ttu {
         text-transform: uppercase;    
@@ -23,27 +21,31 @@
 // Margins
 
     .u-m {
-        margin: 1rem;
+        margin: 1rem !important;
     }
 
-    .u-m\[1\/2\] {
-        margin: 0.5rem;
-    }    
+    .u-m\[2x\] {
+        margin: 2rem;
+    }
 
     .u-mgl {
         margin-left: 1rem;
+    }
+
+    .u-mgl\[neg\] {
+        margin-left: -1rem;
     }
 
     .u-mgr {
         margin-right: 1rem;
     }
 
-    .u-mgr\[1\/2\] {
-        margin-right: 0.5rem;
+    .u-mgt\[1\/2\] {
+        margin-top: 0.5rem;
     }
 
-    .u-mgr\[2x\] {
-        margin-right: 2rem;
+    .u-mgr\[1\/2\] {
+        margin-right: 0.5rem;
     }
 
     .u-m--half {
@@ -61,12 +63,47 @@
         margin-top: 0.5rem;
     }
 
-    .u-mgt\[1\/2\] {
-        margin-top: 0.5rem;
+    .u-pdt\[2x\] {
+        padding-top: 2rem;
+    }
+
+    .u-pd\[2x\] {
+        padding: 2rem;
+    }
+
+    .u-pd\[1\/2\] {
+        padding: 0.5rem;
     }    
+
+    .u-pd {
+        padding: 1rem;
+    }    
+
+    .u-pdv {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .u-pdv\[2x\] {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }    
+
+    .u-pdh {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .u-pdl {
+        padding-left: 1rem !important;
+    }
 
     .u-mgt {
         margin-top: 1rem;
+    }
+
+    .u-mgt\[neg\] {
+        margin-top: -1rem;
     }
 
     .u-mgt\[2x\] {
@@ -74,7 +111,7 @@
     }    
 
     .u-mgb {
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
     }
 
     .u-mgb\[2x\] {
@@ -82,8 +119,8 @@
     }
 
     .u-mgv {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
     }
 
     .u-mgv\[2x\] {
@@ -111,14 +148,8 @@
         outline: 5px solid red;
         display: block;
     }
-
-//  Text Align
     .u-tac {
         text-align: center;
-    }
-
-    .u-tar {
-        text-align: right;
     }
 
     .u-divide {
@@ -128,7 +159,7 @@
 // Paddings
 
     .u-p {
-        padding: 1rem;
+        padding: 1rem !important;
     }
 
     .u-p\[1\/2\] {
@@ -146,6 +177,10 @@
 
     .u-pdt {
         padding-top: 1rem;
+    }
+
+    .u-pdr {
+        padding-right: 1rem;
     }
 
     .u-pdt\[1\/2\] {
@@ -171,9 +206,31 @@
 
     .u-db {
         display: block !important;
-    }
+    }    
 
-//  Vertical text align
     .u-vam {
         vertical-align: middle !important;
+    }
+
+//  Positioning
+
+    .u-pos\[absolute-bottom\] {
+        position: absolute;
+        bottom: 0;
+    }
+
+//  Fit to width
+
+    .u-fit {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .u-cc {
+        color: currentColor !important;
+    }
+
+
+    .u-ovh {
+        overflow: hidden;
     }

@@ -49,14 +49,14 @@
             $tmpSize: floor($key / $steps*100);
             
             @include utility(#{$tmpSize}) {
-                width: percentage($key / $steps);
+                width: percentage($key / $steps) !important;
             }
         }
         @each $width, $size in $customWidths {
             $tmpSize: $width;
 
             @include utility(#{$tmpSize}) {
-                width: percentage($size);
+                width: percentage($size) !important;
             }
         } 
     }

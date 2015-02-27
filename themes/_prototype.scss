@@ -8,65 +8,78 @@
 
 //  Defaults
     
-    $body-background-color:                     #232323;
+    $body-background-color:                     #f9f9f9;
     
     $color-primary:                             #f9d606;
-    $color-primary-dark:                        darken($color-primary, 10%);
-    $color-primary-darker:                      darken($color-primary, 20%);
+    $color-primary-dark:                        #f4d100;
+    $color-primary-darker:                      #5E5000;
 
     $color-primary-contrast:                    #262b38;
 
     $color-secondary:                           #854785;
 
+    $color-success:                             rgba(0,128,0,0.9);
+    $color-warning:                             #fc0;
+    $color-error:                               rgba(255, 77, 0, 0.92);
+
+    $color-hint:                                #5fabf1;
+    $color-hint-light:                          rgba(95, 171, 241, 0.5);
+    $color-hint-lighter:                        rgba(95, 171, 241, 0.1);
+
+
 //  Type
 
     $type-family-primary:                       "Source Sans Pro";
-    $type-display2-size:                        2.8em;
-    $type-display1-size:                        1.999em;
-    $type-title-size:                           1.4em;
-    $type-subtitle-size:                        1.2em;
-    $type-body-size:                            1.1em;
-    $type-data-size:                            0.9em;
+    $type-family-secondary:                     "Roboto Slab";
+    $type-display2-size:                        2.8rem;
+    $type-display1-size:                        1.999rem;
+    $type-title-size:                           1rem;
+    $type-subtitle-size:                        1rem;
+    $type-body-size:                            1rem;
+    $type-data-size:                            0.9rem;
     
-    $type-headline-size:                        1.4em;
-    $type-subheadline-size:                     1em;
+    $type-headline-size:                        1.3rem;
+    $type-subheadline-size:                     1rem;
     
-    $type-paragraph-lineheight:                 1.414em;
+    $type-paragraph-lineheight:                 1.414rem;
         
-    $type-color-primary:                        rgba(0,0,0,0.87);
-    $type-color-secondary:                      rgba(0,0,0,0.54);
+    $type-color-primary:                        #232323;
+    $type-color-secondary:                      #767676;
     
-    $type-data-color:                           #666;
+    $type-data-color:                           $type-color-secondary;
 
 
 //_ Units ______________________________________________________________________________________________________________
 
 //  Button
 
-    $button-border:                             1px solid rgba(255, 255, 255, 0.5);
+    $button-border:                             0;
     $button-padding:                            0.6rem 1rem;
-    $button-border-radius:                      0.2em;
+    $button-border-radius:                      0;
     $button-text-transform:                     uppercase;
-    $button-background:                         $color-primary;
-    $button-color:                              $color-primary-contrast;
+    $button-background:                         #f9d606;
+    $button-hover-background:                   #FFEB73;
+    $button-color:                              $color-primary-darker;
+    $button-font-weight:                        bold;
     
-    $button--flat-border-style:                 none;
-    $button--flat-border-width:                 0;
-    $button--flat-border-color:                 $color-primary-contrast;
+    $button--flat-border-style:                 solid;
+    $button--flat-border-width:                 1px;
+    $button--flat-border-color:                 $color-primary-dark;
     $button--flat-background:                   transparent;
-    $button--flat-color:                        $color-primary-dark;
-    $button--flat-padding:                      0.6rem 0;
+    $button--flat-color:                        $color-primary-darker;
+    $button--flat-padding:                      0.6rem 1rem;
     
 //  Input outline-offset:   ;
     
     $input-padding:                             0.6rem;
-    $input-text-border-width:                   0;
-    $input-text-border-color:                   transparent;
-    $input-text-border-style:                   none;
+    $input-text-border-width:                   1px;
+    $input-text-border-color:                   rgba(0,0,0,0.1);
+    $input-text-border-style:                   solid;
+    $input-text-border-radius:                  0;
 
 //  Offcanvas
 
-    $offcanvas-offset:                          15.4rem;
+    $offcanvas-offset:                          18rem;
     $offcanvas-transition:                      300ms all;
     
     $offcanvas-menu-background-color:           $color-primary;
@@ -101,25 +114,25 @@
     
     $figure-caption-inside-color:               #FFF;
     $figure-caption-inside-padding:             0.5rem;
-    $figure-image--round-diameter:              8rem;
+    $figure-image--round-diameter:              6rem;
     
 //  Card:   ;
     
     $card-background-color:                     #FFF;
-    $card-box-shadow:                           none;
+    $card-box-shadow:                           0 1px 1px 0px rgba(0, 0, 0, 0.1);
     
     $card-margin:                               0;
-    $card-border-width:                         0 0 4px 0;
-    $card-border-style:                         solid;
+    $card-border-width:                         0;
+    $card-border-style:                         none;
     
 //  Select:     ;
     
-    $select-border:                             1px solid rgba(0,0,0,0.2);
+    $select-border:                             1px solid rgba(0, 0, 0, 0.1);
     $select-padding:                            0.5rem;
-    $select-border-radius:                      0.5rem;
+    $select-border-radius:                      0;
     $select-text-transform:                     uppercase;
-    $select-background:                         transparent;
-    $select-color:                              $color-primary-contrast;
+    $select-background:                         #FFF;
+    $select-color:                              #666;
     
 //  Label outline-offset:   ;
     

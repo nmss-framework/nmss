@@ -15,10 +15,23 @@
         display: table;
         width: 100%;
         table-layout: fixed;
+        border-spacing: 0;
 
         &-u {
             display: table-cell;
             vertical-align: top;
+            position: relative;
+        }
+    }
+
+    .gi {
+        font-size: 0;
+
+        &-u {
+            font-size: 1rem;
+            vertical-align: top;
+            display: inline-block;
+            position: relative;
         }
     }
 
@@ -27,6 +40,22 @@
 /*  Variations descriptions */
 
     .g\[pad\] {
-
         border-spacing: 1rem 0;
     }
+
+    .gi\[pad\] {
+
+        padding: 0 0.5rem;
+
+       .gi-u {
+            padding: 0 0.5rem 1rem;
+       }
+    }
+
+    .g\[bleed\] {
+        margin: 0 -1rem; 
+    }
+
+    .gi\[bleed\] {
+        margin: 0 -1rem; 
+    }    

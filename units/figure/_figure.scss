@@ -20,6 +20,10 @@
         position: relative;
         width: 100%;
 
+        &-imageContainer {
+            position: relative;
+        }
+
         &-image {
             width: 100%;
             height: 100%;
@@ -27,10 +31,60 @@
             position: absolute;
             background-size: cover;
             background-position:center center;
+            transition:all 300ms ease-out;
 
         }
 
-        &-caption {}
+        &-text {
+            min-height: 4rem;
+            margin-right: 3.5rem;
+        }
+
+        &-caption {
+            padding: 0.5rem;
+            background-color: #FFF;
+            width: 100%;
+            position: relative;
+        }
+
+        &-badges {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 10;
+
+            &-item {
+                
+                color: #FFF;
+                padding: 0.5rem;
+                text-align: right;
+
+                &--inscription {
+                    background: $color-primary;
+                }
+
+                &--favourites {
+                    background: #9ac695;
+                }
+
+                &--classification {
+                    background: #003;
+                }
+
+                &--cart {
+                    background: $color-primary;
+                }
+
+                &--paid {
+                    background: #9ac695;
+                }
+
+                &--livetiming {
+                    background: $color-primary;
+                    color: $color-primary-darker;
+                }                
+            }
+        }
 
     }
 

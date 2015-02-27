@@ -6,12 +6,14 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $tab-item-padding:                          0.5rem                                  !default;
-    $tab-item-border-bottom:                    1px solid rgba(0,0,0,0.1)               !default;
+    $tab-item-padding:                          1rem                                    !default;
+    $tab-item-border-top:                       none                                    !default;
               
     $tab-item--active-border-style:             solid                                   !default;
-    $tab-item--active-border-width:             4px                                     !default;
+    $tab-item--active-border-width:             2px                                     !default;
     $tab-item--active-border-color:             $color-primary                          !default;
+    $tab-item--active-background-color:         #FEFEFE                                 !default;
+    $tab-background-color:                      transparent                             !default;
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
@@ -19,19 +21,37 @@
         display: table;
         table-layout: fixed;
         width: 100%;
+        background-color: $tab-background-color;
+        border-spacing: 0;
+        cursor: pointer;
+        color: #767676;
+        transition: all 200ms ease-in;
 
         &-item {
             display: table-cell;
             text-align: center;
             padding: $tab-item-padding;
-            border-bottom: $tab-item-border-bottom;
+            border-bottom-width: 0;
             text-transform: uppercase;
+            position: relative;
+            top: 1px;
+            transition: all 100ms ease-in;
+            border:1px solid transparent;
+            border-bottom: 0;
+            @extend %type-ui;
+
+            &:hover{
+                color: #000;
+            }
 
             &--active {
-                border-bottom-style: $tab-item--active-border-style;
-                border-bottom-color: $tab-item--active-border-color;
-                border-bottom-width: $tab-item--active-border-width;
-                font-weight: 700;
+                border:1px solid #DDD;
+                border-bottom: 0;
+                border-top-style: $tab-item--active-border-style;
+                border-top-color: $tab-item--active-border-color;
+                border-top-width: $tab-item--active-border-width;
+                background-color: $tab-item--active-background-color; 
+                color: $color-primary-darker;
             }
         }
     }
@@ -39,3 +59,4 @@
 //_ VARIATIONS _________________________________________________________________________________________________________
 
 /*  Variations descriptions */
+
