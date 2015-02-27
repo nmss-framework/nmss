@@ -1,0 +1,43 @@
+/*_ MODULES ____________________________________________________________________________________________________________
+    
+    switch
+
+    button with switch behaviour */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//  property                                    value                                   !default;
+
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .switch {
+
+        border-radius: 1rem;
+        padding: 0.1rem;
+        border: 0;
+        width: 3rem;
+        background: #eee;
+        text-align: left;
+        outline: none;
+        border:1px solid #DDD;
+        box-shadow: inset 0 1px 1px -1px rgba(0,0,0,0.2);
+
+        &--on {
+            background: #99cc66;
+            text-align: right;
+            border:1px solid #8EBD5F;
+        }
+
+        &-handle {
+            border-radius: 1rem;
+            padding: 0.2rem;   
+            background:#FFF;
+            color: #666;
+        }
+
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  Variations descriptions */

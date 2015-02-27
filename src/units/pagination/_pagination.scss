@@ -1,0 +1,40 @@
+/*_ MODULES ____________________________________________________________________________________________________________
+    
+    pagination
+
+    Show old-school pager for tables, etc. */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//  property                                    value                                   !default;
+
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .pagination {
+
+        background: rgba(0, 0, 0, 0.03);
+        padding: 1rem;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) -60%, transparent 20%);
+        border-top: 1px solid #FFF;
+        
+        &-page {
+
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 0;
+            height: 2.5rem;
+
+            &--active {
+                font-weight: bold;
+                background: rgba(249, 214, 6, 0.5);
+            }
+        }
+
+        &-select {
+
+        }
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+

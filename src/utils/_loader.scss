@@ -1,0 +1,30 @@
+/*_ UTILS ______________________________________________________________________________________________________________
+
+    Loader
+
+    Multopurpose spinning loader
+
+*/
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//  #TODO check if dead
+
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+//_ VARIATIONS _________________________________________________________________
+
+.loader--inverse:before, .loader--inverse:after {
+    background: #232323;
+}
+
+.loader-wrapper {
+    height: 3rem;
+}
+
+.loader {
+    color: transparent;
+    background: url("../img/loader.svg") no-repeat center center transparent;
+    background-size: 3%;
+    height: 100%;
+}

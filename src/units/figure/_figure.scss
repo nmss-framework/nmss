@@ -1,0 +1,142 @@
+/*_ UNITS ______________________________________________________________________________________________________________
+    
+    Figure
+
+    Image container with ratios and caption  */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+    $figure-offset:                             18rem                                   !default;
+    $figure-transition:                         300ms all                               !default;
+   
+    $figure-caption-inside-background:          rgba(35, 35, 35, 0.5)                   !default;
+    $figure-caption-inside-color:               #FFF                                    !default;
+    $figure-caption-inside-padding:             0.5rem                                  !default;
+    $figure-image--round-diameter:              8rem                                    !default;
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .figure {
+        position: relative;
+        width: 100%;
+
+        &-imageContainer {
+            position: relative;
+        }
+
+        &-image {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            position: absolute;
+            background-size: cover;
+            background-position:center center;
+            transition:all 300ms ease-out;
+
+        }
+
+        &-text {
+            min-height: 4rem;
+            margin-right: 3.5rem;
+        }
+
+        &-caption {
+            padding: 0.5rem;
+            background-color: #FFF;
+            width: 100%;
+            position: relative;
+        }
+
+        &-badges {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 10;
+
+            &-item {
+                
+                color: #FFF;
+                padding: 0.5rem;
+                text-align: right;
+
+                &--inscription {
+                    background: $color-primary;
+                }
+
+                &--favourites {
+                    background: #9ac695;
+                }
+
+                &--classification {
+                    background: #003;
+                }
+
+                &--cart {
+                    background: $color-primary;
+                }
+
+                &--paid {
+                    background: #9ac695;
+                }
+
+                &--livetiming {
+                    background: $color-primary;
+                    color: $color-primary-darker;
+                }                
+            }
+        }
+
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  figure--1-2:            Keeps the figure in a 1/2 width ratio
+    figure--16-9:           Keeps the figure in a 16/9 width ratio
+    figure--21-9:           Keeps the figure in a 21/9 width ratio
+
+    figure-image--round:    Makes the image in a figure circular, nice for 
+                            avatar pictures
+
+    figure-caption--inside: Puts the caption over the image aligned to bottom
+
+ */
+
+    .figure {
+
+        &--1-2 {
+            width: 100%;
+            padding-bottom: 50%;
+        }
+
+        &--16-9 {
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+
+        &--21-9 {
+            width: 100%;
+            padding-bottom: 42.85%;
+        }
+    }
+
+    .figure-image {
+
+        &--round {
+            width:  $figure-image--round-diameter;
+            height: $figure-image--round-diameter;
+            border-radius: 100%;
+            position: relative;            
+        }
+    }
+
+    .figure-caption {
+
+        &--inside {
+            position: absolute;
+            background: $figure-caption-inside-background;
+            color: $figure-caption-inside-color;
+            padding: $figure-caption-inside-padding;
+            bottom: 0%;
+            width: 100%;        
+        }
+    }

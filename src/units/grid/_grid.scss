@@ -1,0 +1,60 @@
+/*_ MODULES ____________________________________________________________________________________________________________
+
+    grid
+
+    Table fixed grid similar to http://mdo.github.io/table-grid/ */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//  property                            value                                   !default;
+
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .g {
+        display: flex;
+
+        &-u {
+            flex-grow: 1;
+        }
+    }
+
+    .gi {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-u {
+            //flex-grow: 1;
+        }
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  Variations descriptions */
+
+    .g\[pad\] {
+
+        margin: 0 0 0 -1rem;
+
+        .g-u {
+            padding: 0 0 0 1rem;
+        }
+
+    }
+
+    .gi\[pad\] {
+
+        padding: 0 0.5rem;
+
+       .gi-u {
+            padding: 0 0.5rem 1rem;
+       }
+    }
+
+    .g\[bleed\] {
+        margin: 0 -1rem;
+    }
+
+    .gi\[bleed\] {
+        margin: 0 -1rem;
+    }

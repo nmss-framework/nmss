@@ -1,0 +1,72 @@
+/*_ MODULES ____________________________________________________________________________________________________________
+    
+    optionGroup
+
+    radio button hack to show radio buttons as a group of options */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//  property                                    value                                   !default;
+
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .optionGroup {
+
+        padding: 1px;
+        position: relative;
+
+        &-label {
+            padding: 0.5rem;
+            vertical-align: middle;
+            min-height: 3.5rem;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            @extend %type-data;
+
+            &:hover {
+                background: $color-hint-lighter;
+            }
+        }
+
+        &-radio {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            position: absolute;
+        }
+
+        &-option {
+            display: inline-block;
+            border-width: 1px 1px 1px 0;
+            border:1px solid #DDD;
+            margin: 0 -1px -1px 0;
+            background:#FFF;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .optionGroup-label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        input[type=radio]:checked + .optionGroup-label{
+            background: $color-hint;
+            color: #FFF;
+        }
+
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  Variations descriptions */

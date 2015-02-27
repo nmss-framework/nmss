@@ -1,0 +1,120 @@
+/*  
+
+    888b    |      e    e      ,d88~~\ ,d88~~\ 
+    |Y88b   |     d8b  d8b     8888    8888    
+    | Y88b  |    d888bdY88b    `Y88b   `Y88b   
+    |  Y88b |   / Y88Y Y888b    `Y88b,  `Y88b, 
+    |   Y88b|  /   YY   Y888b     8888    8888 
+    |    Y888 /          Y888b \__88P' \__88P' 
+                                           
+
+    This file includes all the needed dependencies for the nmss framework,
+    the order of these includes cannot be modified as it will broke the 
+    overrides.
+
+
+___ DEFAULTS ___________________________________________________________________________________________________________
+    
+    normalize           Render all elements more consistently 
+                        and in line with modern standards
+    
+    defaults            Overrides of normalize
+
+___ THEMES _____________________________________________________________________________________________________________
+
+    prototype           base theme of the framework, change as you wish
+    
+___ TYPE _______________________________________________________________________________________________________________
+
+    type                Typographic system with common type hierarchy
+
+___ UTILS ______________________________________________________________________________________________________________
+
+    utils               Common layout utilities following emmet sintax
+
+    clearfix            http://nicolasgallagher.com/micro-clearfix-hack/
+
+    loader              Multipurpose spinning loader
+
+    proportions         Proportional width system 
+
+___ UNITS ______________________________________________________________________________________________________________
+
+    button              Common button patterns
+
+    form                Form wrapper to align elements and modify their 
+                        behaviour, mainly input and label
+
+    input               By default this is a material design like input, 
+                        only bottom borders are shown
+
+    nav                 Navigation abstraction as in bootstrap
+
+    offcanvas           Mobile first offcanvas navigation with fixed containers,
+                        menu and toggle button
+
+    figure              Image container with ratios and caption
+
+    card                Material Design alike card
+
+    table               Common Mobile First table patterns
+
+    select              Common select patterns
+
+    label               Common label patterns
+
+    anchor              link styling
+
+    switch              switches!
+
+    tooltip             tooltips!
+
+    optionGroup         radio groups as nice options
+
+    badges              badges
+
+*/
+
+//_ DEFAULTS ___________________________________________________________________________________________________________
+
+@import "vendor/normalize",
+        "defaults";
+
+//_ THEMES _____________________________________________________________________________________________________________
+
+@import "themes/prototype";
+
+//_ TYPE _______________________________________________________________________________________________________________
+
+@import "type";
+
+//_ UTILS ______________________________________________________________________________________________________________
+
+@import "utils/utils",
+        "utils/clearfix",
+        "utils/loader",        
+        "utils/proportions";
+
+//_ UNITS ______________________________________________________________________________________________________________
+
+@import "units/button/button",
+        "units/form/form",
+        "units/input/input",
+        "units/nav/nav",
+        "units/tab/tab",
+        "units/steps/steps",
+        "units/grid/grid",
+        "units/icon/icon",
+        "units/offcanvas/offcanvas",
+        "units/figure/figure",
+        "units/card/card",
+        "units/pagination/pagination",
+        "units/alert/alert",
+        "units/table/table",
+        "units/select/select",
+        "units/badges/badges",
+        "units/label/label",
+        "units/tooltip/tooltip",
+        "units/anchor/anchor",
+        "units/switch/switch",
+        "units/optionGroup/optionGroup";

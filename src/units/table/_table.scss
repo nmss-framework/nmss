@@ -1,0 +1,106 @@
+/*_ UNITS ______________________________________________________________________________________________________________
+    
+    Table
+
+    Common Mobile First table patterns  */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .table {
+
+        border-collapse: collapse; 
+        width: 100%;
+
+        &-tr {
+
+            border-top: 1px solid rgba(0,0,0,0.025);
+
+            &:first-child {
+                border-top: none;
+            }
+
+            .table-td:first-child, .table-th:first-child {
+                padding-left: 1rem;
+            }
+
+        }
+
+        &-th {
+            text-align: left;
+            vertical-align: middle;
+            font-weight: 600;
+        }
+
+        &-td {
+            text-align: left;
+            vertical-align: middle;
+            height: 3.2rem;
+        }
+
+        &-ov {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  table--inline:      borderless as an inline element
+    table--fixed:       fixed structural table
+*/
+    .table {
+
+        &--inline {
+            .table-th {
+                padding: 0;
+            }
+
+            .table-td {
+                border: 0;
+                height: auto;
+                padding: 0;
+            }
+        }
+
+        &--interactive {
+
+            .table-tr:hover {
+
+                background: rgba(255,255,255,0.7);
+                cursor: pointer;
+
+            }
+
+            thead {
+
+                .table-tr {
+                    border:0;
+                }
+
+                .table-tr:hover {
+                    background: transparent;
+                    cursor: default;
+                }
+            }
+        }
+
+        &--fixed {
+            table-layout: fixed;
+        }
+
+        &--borderless {
+
+            .table-tr {
+
+                border-top: none;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+            }            
+        }
+    }
