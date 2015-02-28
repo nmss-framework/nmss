@@ -52,13 +52,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var observable = document.querySelector('#section-code');
     var previewer = document.querySelector('#section-preview');
-    var editor = new Behave({
-        textarea: observable
-    });
+    // var editor = new Behave({
+    //     textarea: observable
+    // });
+
+    emmet.require('textarea').setup({
+        pretty_break: true, // enable formatted line breaks (when inserting 
+                            // between opening and closing tag) 
+        use_tab: true       // expand abbreviations by Tab key
+    });    
 
 // requestanimationframe?
 
-    setInterval(rePaint, 10);
+    setInterval(rePaint, 1000);
 
     function rePaint(e) {
         previewer.contentWindow.document.open();
@@ -68,8 +74,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             '<link rel="stylesheet" href="css/nmss.css">' +
             '<link rel="stylesheet" href="css/doc.css">' +
             '</head>' +
-            '<body>' + observable.value.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, '') +
-            '</body></html>');
+            '<body class="wrapper-preview"><div class="content-preview">' + observable.value.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, '') +
+            '</div></body></html>');
         previewer.contentWindow.document.close();
     }
 
