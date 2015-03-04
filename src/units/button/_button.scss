@@ -6,21 +6,21 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $button-border:                             0                                       !default;
-    $button-padding:                            0                                       !default;
-    $button-border-radius:                      0                                       !default;
-    $button-text-transform:                     uppercase                               !default;
-    $button-background:                         $color-primary                          !default;
-    $button-hover-background:                   lighten($color-primary, 10%)            !default;
-    $button-color:                              $color-primary-darker                   !default;
-    $button-font-weight:                        600                                     !default;
+//  $button-border
+//  $button-padding
+//  $button-border-radius
+//  $button-text-transform
+//  $button-background
+//  $button-hover-background
+//  $button-color
+//  $button-font-weight
 
-    $button--flat-border-style:                 solid                                   !default;
-    $button--flat-border-width:                 1px                                     !default;
-    $button--flat-border-color:                 $color-primary-contrast                 !default;
-    $button--flat-background:                   transparent                             !default;
-    $button--flat-color:                        $color-primary-dark                     !default;
-    $button--flat-padding:                      0 1rem                                  !default;
+//  $button--flat-border-style
+//  $button--flat-border-width
+//  $button--flat-border-color
+//  $button--flat-background
+//  $button--flat-color
+//  $button--flat-padding
 
 //_ DEFINITION _________________________________________________________________________________________________________
 

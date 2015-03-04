@@ -4,4 +4,4 @@ var serveStatic = require('serve-static');
 var app = express();
 
 app.use(serveStatic('doc', {'index': ['index.html']}));
-app.listen(3000);
+app.listen(1010);

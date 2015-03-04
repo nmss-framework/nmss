@@ -1,4 +1,6 @@
-var nmss = (function() {
+var elements = require('./elements.js');
+
+module.exports = function(elements) {
     'use strict';
 
     var state = {
@@ -36,39 +38,26 @@ var nmss = (function() {
         dragOver: dragOver,
         dragDrop: dragDrop
     };
-
-})(elements);
-
-var elements = {
-    'button': {
-        template: '<button class="button">This is a button</button>'
-    },
-    'input': {
-        template: '<input type="text" class="input" placeholder="input">'
-    },
-    'grid': {
-        template: '<div class="g"></div>'
-    },
-    'grid-item': {
-        template: '<div class="g-u"></div>'
-    }
 };
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event, rest) {
 
-    var observable = document.querySelector('#section-code');
+    var emmet = require('./vendor/emmet.min.js');
+    var rest = require('rest');
+
+    var sectionCode = document.querySelector('#section-code');
     var previewer = document.querySelector('#section-preview');
-    // var editor = new Behave({
-    //     textarea: observable
-    // });
+
+    rest('style.html').then(function(response) {
+        console.log(response);
+        sectionCode.value = response.entity;
+    });
 
     emmet.require('textarea').setup({
-        pretty_break: true, // enable formatted line breaks (when inserting 
-                            // between opening and closing tag) 
-        use_tab: true       // expand abbreviations by Tab key
-    });    
-
-// requestanimationframe?
+        pretty_break: true, // enable formatted line breaks (when inserting
+        // between opening and closing tag)
+        use_tab: true // expand abbreviations by Tab key
+    });
 
     setInterval(rePaint, 1000);
 
@@ -80,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             '<link rel="stylesheet" href="css/nmss.css">' +
             '<link rel="stylesheet" href="css/doc.css">' +
             '</head>' +
-            '<body class="wrapper-preview"><div class="content-preview">' + observable.value.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, '') +
+            '<body class="wrapper-preview"><div class="content-preview">' + sectionCode.value.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, '') +
             '</div></body></html>');
         previewer.contentWindow.document.close();
     }

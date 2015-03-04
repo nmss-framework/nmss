@@ -1,29 +1,29 @@
-/*  
+/*
 
-    888b    |      e    e      ,d88~~\ ,d88~~\ 
-    |Y88b   |     d8b  d8b     8888    8888    
-    | Y88b  |    d888bdY88b    `Y88b   `Y88b   
-    |  Y88b |   / Y88Y Y888b    `Y88b,  `Y88b, 
-    |   Y88b|  /   YY   Y888b     8888    8888 
-    |    Y888 /          Y888b \__88P' \__88P' 
-                                           
+    888b    |      e    e      ,d88~~\ ,d88~~\
+    |Y88b   |     d8b  d8b     8888    8888
+    | Y88b  |    d888bdY88b    `Y88b   `Y88b
+    |  Y88b |   / Y88Y Y888b    `Y88b,  `Y88b,
+    |   Y88b|  /   YY   Y888b     8888    8888
+    |    Y888 /          Y888b \__88P' \__88P'
+
 
     This file includes all the needed dependencies for the nmss framework,
-    the order of these includes cannot be modified as it will broke the 
+    the order of these includes cannot be modified as it will broke the
     overrides.
 
 
 ___ DEFAULTS ___________________________________________________________________________________________________________
-    
-    normalize           Render all elements more consistently 
+
+    normalize           Render all elements more consistently
                         and in line with modern standards
-    
+
     defaults            Overrides of normalize
 
 ___ THEMES _____________________________________________________________________________________________________________
 
     prototype           base theme of the framework, change as you wish
-    
+
 ___ TYPE _______________________________________________________________________________________________________________
 
     type                Typographic system with common type hierarchy
@@ -36,16 +36,16 @@ ___ UTILS ______________________________________________________________________
 
     loader              Multipurpose spinning loader
 
-    proportions         Proportional width system 
+    proportions         Proportional width system
 
 ___ UNITS ______________________________________________________________________________________________________________
 
     button              Common button patterns
 
-    form                Form wrapper to align elements and modify their 
+    form                Form wrapper to align elements and modify their
                         behaviour, mainly input and label
 
-    input               By default this is a material design like input, 
+    input               By default this is a material design like input,
                         only bottom borders are shown
 
     nav                 Navigation abstraction as in bootstrap
@@ -92,7 +92,7 @@ ___ UNITS ______________________________________________________________________
 
 @import "utils/utils",
         "utils/clearfix",
-        "utils/loader",        
+        "utils/loader",
         "utils/proportions";
 
 //_ UNITS ______________________________________________________________________________________________________________

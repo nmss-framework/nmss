@@ -1,5 +1,5 @@
 //_ TYPE _______________________________________________________________________________________________________________
-    
+
 //  Typographic system with common type hierarchy
 
 
@@ -23,7 +23,7 @@
 
     $type-color-primary:                        #232323                                 !default;
     $type-color-secondary:                      #6b6f7e                                 !default;
-    $type-color-inverse:                        rgba(255,255,255,0.87)                  !default;                                
+    $type-color-inverse:                        rgba(255,255,255,0.87)                  !default;
 
     $type-highlight-color:                      $color-primary                          !default;
 
@@ -35,13 +35,13 @@
         color: $type-color-primary;
     }
 
-    %type-display1, 
+    %type-display1,
     .type-display1 {
         font-size: $type-display1-size;
         color: $type-color-primary;
     }
 
-    %type-subheadline, 
+    %type-subheadline,
     .type-subheadline {
         font-family: $type-family-secondary;
         font-size: $type-subheadline-size;
@@ -49,15 +49,15 @@
         line-height: 1.2;
     }
 
-    %type-headline, 
-    .type-headline {  
+    %type-headline,
+    .type-headline {
         font-family: $type-family-secondary;
         font-size: $type-headline-size;
         color: $color-primary-contrast;
         line-height: 1;
     }
 
-    %type-title, .type-title {  
+    %type-title, .type-title {
         font-size: $type-title-size;
         color: $type-color-secondary;
     }
@@ -89,7 +89,7 @@
 
     %type-highlight, .type-highlight {
         color: $type-highlight-color;
-    }    
+    }
 
     .u-tsh {
         text-shadow: 1px 1px 2px $type-color-secondary;

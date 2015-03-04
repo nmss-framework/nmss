@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"padding"
+			],
+			[
 				"actions",
 				"actionsService"
 			],
@@ -276,10 +280,6 @@
 				"disabled	Attr"
 			],
 			[
-				"pa",
-				"padding-left"
-			],
-			[
 				"ma",
 				"margin"
 			],
@@ -519,6 +519,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "doc/index.html",
+			"settings":
+			{
+				"buffer_size": 1904,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 510,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "doc/js/doc.js",
+			"settings":
+			{
+				"buffer_size": 2122,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "doc/js/elements.js",
+			"settings":
+			{
+				"buffer_size": 341,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -529,6 +561,10 @@
 			[
 				"pack",
 				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Repository"
 			],
 			[
 				"angula rebuil",
@@ -737,9 +773,48 @@
 	],
 	"file_history":
 	[
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/gulpfile.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/dist/nmss.css",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/package.json",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/bundle.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/doc.bundle.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/preview.html",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/grid/_grid.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/bin/doc.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/doc.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/config.xml",
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/package.json",
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/index.html",
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/Gruntfile.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/bundle.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/optionGroup/_optionGroup.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/src/index.html",
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/src/mobweb/app.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/index.html",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/elements.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/form/_form.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/figure/_figure.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/card/_card.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/button/_button.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/badges/_badges.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/_defaults.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/alert/_alert.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/css/doc.css",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/anchor/_anchor.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/style.html",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/css/nmss.css",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/README.md",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/steps/_steps_tramos.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/gulpfile.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/menu.html",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/code.html",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/icon/_icon.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/index.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/select/_select.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/nmss.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/_type.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/lib/nmss.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/lib/doc.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/bin/doc",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/dist/nmss.css",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/scss/modules/topBar/_topBar.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/common/actions/actions.service.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/test/e2e/homepage/homepage.page.js",
@@ -761,7 +836,6 @@
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/package.json",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/package.json",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/crosswalk/grunt.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/Gruntfile.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/scss/app.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/retro_chat/index.html",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/retro_chat/chatroom.html",
@@ -826,49 +900,11 @@
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/athletes/athletes.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/athletes/athletesClassification.photos.tpl",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/Gruntfile.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/scss/nmss/units/grid/_grid.scss",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/races.inscription.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/cart/cart.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/cart/cart.service.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/common/services/resources.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/config/app.config.int.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/config/app.config.serve.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/common/directives/clickOnce.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/documentation/source-files/sportmaniacs/mobileClient/src_app_common_directives_notification.js.txt",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.resetpassword.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/races.service.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/raceEvents.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/scss/nmss/units/grid/_grid.scss",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/races.events.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/common/services/auth.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/config/app.config.dev.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.newUser.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.newUser.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.existinguser.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/user/user.photos.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/payment/payment.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/raceInscription.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/race/race.Inscription.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/app.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/php/RequestAPI.php",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/resources/angular/i18n/angular-locale_sr-cyrl-rs.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/races.searchResults.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/raceSearchResults.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/races.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/races/racesClassification.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/php/Req.php",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.existingUser.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/documentation/partials/sportmaniacs/mobileClient/login.html",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/documentation/partials/sportmaniacs/mobileClient/login.controller",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.module.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/payment/payment.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/resources/docular-partials/docular_partial_group_index.html"
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/scss/nmss/units/grid/_grid.scss"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -910,6 +946,40 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"observable",
+			"mobweb",
+			"serve",
+			"publish",
+			"copy:d",
+			"newIframe",
+			"src=\"menu.html\"",
+			"iframe",
+			"ev",
+			"dragEnter",
+			"ev",
+			"gi-u",
+			"g-u",
+			"100px",
+			"u\">",
+			"\">",
+			"g-u<",
+			"g-u",
+			"unit",
+			"lbel",
+			"disabled",
+			"inline",
+			"flat",
+			"button",
+			"Button",
+			"button",
+			"Button",
+			"button",
+			"Button",
+			"button",
+			"Button",
+			"button",
+			"Button",
+			"button",
 			"sass",
 			"http:",
 			"185.58.196.142",
@@ -1003,41 +1073,7 @@
 			"uiRouterPermissionsSrv::notAuthorized",
 			"searchResultsVm",
 			"nameField",
-			"closeModalApp",
-			"TiempoOficial",
-			"tiempoOficial",
-			"consol",
-			"diploma",
-			"descarga tu diploma",
-			"url",
-			"addClass(\"show\")",
-			"state('races.inscription'",
-			"raceInscriptionController",
-			"searchCtrl",
-			".state('races.events',",
-			"races.even",
-			"races.eve",
-			"raceEventsController",
-			".state('races.events'",
-			"races.e",
-			".state('races.events',",
-			"races.events",
-			"tabContainer",
-			"ol",
-			"li",
-			"9",
-			"UserTrackingService",
-			"loginCtrl",
-			"modalService",
-			"raceService",
-			"$state",
-			"$http",
-			" $q",
-			"$q",
-			"$log",
-			"actionsService.sendEvent",
-			"vent",
-			"actionsServ"
+			"closeModalApp"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1116,8 +1152,165 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "doc/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1904,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1565,
+								1553
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								510,
+								510
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "doc/js/doc.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "doc/js/elements.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								510,
+								510
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1138,11 +1331,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1172,6 +1372,106 @@
 		"selected_items":
 		[
 			[
+				"elem",
+				"doc\\js\\elements.js"
+			],
+			[
+				"bundle",
+				"bundle.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"doc",
+				"bin\\doc.js"
+			],
+			[
+				"index",
+				"doc\\index.html"
+			],
+			[
+				"element",
+				"doc\\js\\elements.js"
+			],
+			[
+				"docscs",
+				"doc\\css\\doc.css"
+			],
+			[
+				"style",
+				"doc\\style.html"
+			],
+			[
+				"alert",
+				"src\\units\\alert\\_alert.scss"
+			],
+			[
+				"docjs",
+				"bin\\doc.js"
+			],
+			[
+				"code",
+				"doc\\code.html"
+			],
+			[
+				"menu",
+				"doc\\menu.html"
+			],
+			[
+				"pr",
+				"doc\\preview.html"
+			],
+			[
+				"preview",
+				"doc\\preview.html"
+			],
+			[
+				"indexhtml",
+				"doc\\index.html"
+			],
+			[
+				"grid",
+				"src\\units\\grid\\_grid.scss"
+			],
+			[
+				"def",
+				"src\\_defaults.scss"
+			],
+			[
+				"type",
+				"src\\_type.scss"
+			],
+			[
+				"prev",
+				"doc\\preview.html"
+			],
+			[
+				"previ",
+				"doc\\preview.html"
+			],
+			[
+				"doccs",
+				"doc\\css\\doc.css"
+			],
+			[
+				"re",
+				"doc\\preview.html"
+			],
+			[
+				"pre",
+				"doc\\preview.html"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
 				"pack",
 				"package.json"
 			],
@@ -1182,10 +1482,6 @@
 			[
 				"appjs",
 				"src\\nmfront\\app.js"
-			],
-			[
-				"index",
-				"src\\index.html"
 			],
 			[
 				"topbar",
@@ -1286,10 +1582,6 @@
 			[
 				"page",
 				"test\\e2e\\homepage\\homepage.page.js"
-			],
-			[
-				"packa",
-				"package.json"
 			],
 			[
 				"athletepho",
@@ -1590,98 +1882,6 @@
 			[
 				"homepaspe",
 				"test\\e2e\\homepage\\homepage.spec.js"
-			],
-			[
-				"ction",
-				"src\\nmfront\\common\\actions\\actions.service.js"
-			],
-			[
-				"livese",
-				"src\\nmfront\\race\\race.liveTiming.service.js"
-			],
-			[
-				"raceliv",
-				"src\\nmfront\\race\\race.liveTiming.tpl"
-			],
-			[
-				"raceliveall",
-				"src\\nmfront\\race\\race.liveTiming.all.tpl"
-			],
-			[
-				"racetpl",
-				"src\\nmfront\\race\\race.tpl"
-			],
-			[
-				"raceli",
-				"src\\nmfront\\race\\race.liveTiming.js"
-			],
-			[
-				"raceeve",
-				"src\\nmfront\\race\\race.events.js"
-			],
-			[
-				"racejs",
-				"src\\nmfront\\race\\race.js"
-			],
-			[
-				"race.tpl",
-				"src\\nmfront\\race\\race.tpl"
-			],
-			[
-				"race.event",
-				"src\\nmfront\\race\\race.events.tpl"
-			],
-			[
-				"racelivetpl",
-				"src\\nmfront\\race\\race.liveTiming.tpl"
-			],
-			[
-				"livetimse",
-				"src\\nmfront\\race\\race.liveTiming.service.js"
-			],
-			[
-				"raceliveath",
-				"src\\nmfront\\race\\race.liveTiming.athlete.js"
-			],
-			[
-				"racelivetime",
-				"src\\nmfront\\race\\race.liveTiming.athlete.tpl"
-			],
-			[
-				"racelivealltpl",
-				"src\\nmfront\\race\\race.liveTiming.all.tpl"
-			],
-			[
-				"livetimalljs",
-				"src\\nmfront\\race\\race.liveTiming.all.js"
-			],
-			[
-				"liveath",
-				"src\\nmfront\\race\\race.liveTiming.athlete.js"
-			],
-			[
-				"raceclasalltpl",
-				"src\\nmfront\\race\\race.classification.all.tpl"
-			],
-			[
-				"racelivetimall",
-				"src\\nmfront\\race\\race.liveTiming.all.tpl"
-			],
-			[
-				"useredit",
-				"src\\nmfront\\user\\user.edit.js"
-			],
-			[
-				"racelivetimathtpl",
-				"src\\nmfront\\race\\race.liveTiming.athlete.tpl"
-			],
-			[
-				"racelivetall",
-				"src\\nmfront\\race\\race.liveTiming.all.js"
-			],
-			[
-				"live",
-				"src\\nmfront\\race\\race.liveTiming.js"
 			]
 		],
 		"width": 0.0
@@ -1702,14 +1902,14 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
-	"show_tabs": false,
-	"side_bar_visible": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
 	"side_bar_width": 192.0,
 	"status_bar_visible": true,
 	"template_settings":
