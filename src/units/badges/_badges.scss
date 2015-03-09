@@ -6,22 +6,24 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-//  property                                    value                                   !default;
-
+//  $badges-boder-radius
+//  $badges-background
+//  $badges-margin-right
+//  $badges-padding
+//  $badges-color
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
 //#TODO abstract this
 
     .badges {
+        display: inline-block;
 
-        &--inscriptions {
-            border-radius: 0.3rem;
-            background: #9ac695;
-            margin-right: 3rem;
-            padding: 0.5rem 1rem 1rem;
-            color: #FFF;
-        }
+        font-size: $badges-font-size;
+        border-radius: $badges-boder-radius;
+        background: $badges-background;
+        padding: $badges-padding;
+        color: $badges-color;
     }
 
 //_ VARIATIONS _________________________________________________________________________________________________________

@@ -1,36 +1,32 @@
 /*_ UNITS ______________________________________________________________________________________________________________
-    
-    Input 
+
+    Input
 
     By default this is a material design like input, only bottom borders
     are shown */
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $input-padding:                             0                                       !default;
-    $input-text-border-width:                   0                                       !default;
-    $input-text-border-color:                   0                                       !default;
-    $input-text-border-style:                   none                                    !default;
-    $input-text-border-radius:                  0                                       !default;
-    
+    // $input-padding
+    // $input-text-border-width
+    // $input-text-border-color
+    // $input-text-border-style
+    // $input-text-border-radius
+
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
 .input {
 
-    border: 0;
     width: 100%;
-    color: #666;
-    height: 2.5rem;
-    font-size: 1rem;
 
     &:focus {
-        outline: 1px solid $color-hint-light;
+        outline: $input-focus-outline;
         outline-offset: -1px;
     }
 
-    &[type="text"], 
-    &[type="search"], 
+    &[type="text"],
+    &[type="search"],
     &[type="email"],
     &[type="date"],
     &[type="password"],
@@ -41,7 +37,7 @@
         border-color:   $input-text-border-color;
         border-style:   $input-text-border-style;
         border-radius:  $input-text-border-radius;
-        
+
         box-sizing: border-box;
     }
 

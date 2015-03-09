@@ -6,21 +6,21 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $button-border:                             0                                       !default;
-    $button-padding:                            0                                       !default;
-    $button-border-radius:                      0                                       !default;
-    $button-text-transform:                     uppercase                               !default;
-    $button-background:                         $color-primary                          !default;
-    $button-hover-background:                   lighten($color-primary, 10%)            !default;
-    $button-color:                              $color-primary-darker                   !default;
-    $button-font-weight:                        600                                     !default;
+//  $button-border
+//  $button-padding
+//  $button-border-radius
+//  $button-text-transform
+//  $button-background
+//  $button-hover-background
+//  $button-color
+//  $button-font-weight
 
-    $button--flat-border-style:                 solid                                   !default;
-    $button--flat-border-width:                 1px                                     !default;
-    $button--flat-border-color:                 $color-primary-contrast                 !default;
-    $button--flat-background:                   transparent                             !default;
-    $button--flat-color:                        $color-primary-dark                     !default;
-    $button--flat-padding:                      0 1rem                                  !default;
+//  $button--flat-border-style
+//  $button--flat-border-width
+//  $button--flat-border-color
+//  $button--flat-background
+//  $button--flat-color
+//  $button--flat-padding
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
@@ -36,20 +36,20 @@
         padding: $button-padding;
         border: $button-border;
         border-radius: $button-border-radius;
-        background: no-repeat center center $button-background;
+        background: $button-background;
         color: $button-color;
         font-weight: $button-font-weight;
         text-transform: $button-text-transform;
 
-        transition: all 300ms ease-out;
-        height: 2.5rem;
-        font-size: 0.9rem;
-        box-shadow: 0 1px 0px $button-background;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        background-size: auto, 10%;
+        // transition: all 300ms ease-out;
+        // height: 2.5rem;
+        // font-size: 0.9rem;
+        // box-shadow: 0 1px 0px $button-background;
+        // border: 1px solid rgba(0, 0, 0, 0.05);
+        // background-size: auto, 10%;
 
         &:hover {
-            background: no-repeat center center lighten($button-background, 20%);
+            background: no-repeat center center $button-hover-background;
             background-size: auto, 10%;
             box-shadow: 0 1px 0px $button-background;
         }

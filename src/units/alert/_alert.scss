@@ -1,34 +1,37 @@
 /*_ UNITS ______________________________________________________________________
-    
+
     alert
 
-    inline notification */
+    inline notification
+
+*/
 
 //_ CONFIGURATION ______________________________________________________________
 
-//  property                                 value                     !default;
-
-    
+//  $alert-padding
+//  $alert-border
+//  $alert-color
 
 //_ DEFINITION _________________________________________________________________
 
     .alert {
-        padding: 1rem;
-        border: 1px solid rgba(0,0,0,0.1);
+        display: block;
+        padding: $alert-padding;
+        border: $alert-border;
 
         &--success {
-            color: #FFF;
-            background: $color-success;
+            color: $alert--success-color;
+            background: $color--success-background;
         }
 
         &--warning {
-            color: #FFF;
-            background: $color-warning;
+            color: $alert--warning-color;
+            background: $color--warning-background;
         }
 
         &--error {
-            color: #FFF;
-            background: $color-error;
+            color: $alert--error-color;
+            background: $color--error-background;
         }
     }
 

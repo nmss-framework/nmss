@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <title>Hello World</title>
     <link rel="stylesheet" href="css/doc.css">
-    <script src="js/doc.js"></script>
-    <script src="js/vendor/behave.js"></script>
-    <script src="js/vendor/emmet.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +16,6 @@
     </div>
 
     <div class="section-main">
-
         <div class="section-elements">
             <nav>
                 <div class="section-elements-item" id="button" draggable="true" ondragenter="return nmss.dragEnter(event)" ondragstart="return nmss.dragStart(event)" ondrop="return nmss.dragDrop(event)" ondragover="return nmss.dragOver(event)">button
@@ -27,14 +23,17 @@
                 <div class="section-elements-item" id="input" draggable="true" ondragenter="return nmss.dragEnter(event)" ondragstart="return nmss.dragStart(event)" ondrop="return nmss.dragDrop(event)" ondragover="return nmss.dragOver(event)">input
                 </div>
                 <div class="section-elements-item" id="grid" draggable="true" ondragenter="return nmss.dragEnter(event)" ondragstart="return nmss.dragStart(event)" ondrop="return nmss.dragDrop(event)" ondragover="return nmss.dragOver(event)">grid
-                </div>         
+                </div>
                 <div class="section-elements-item" id="grid-item" draggable="true" ondragenter="return nmss.dragEnter(event)" ondragstart="return nmss.dragStart(event)" ondrop="return nmss.dragDrop(event)" ondragover="return nmss.dragOver(event)">grid-item
-                </div>                        
+                </div>
             </nav>
         </div>
         <textarea class="section-code" id="section-code" contenteditable="true" ondragenter="return nmss.dragEnter(event)" ondrop="return nmss.dragDrop(event)" ondragover="return nmss.dragOver(event)"></textarea>
         <iframe id="section-preview" src="preview.html" frameborder="0" class="section-preview"></iframe>
     </div>
+
+    <script src="doc.bundle.js"></script>
+
 </body>
 
 </html>
