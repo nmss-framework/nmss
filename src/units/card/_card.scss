@@ -1,23 +1,24 @@
 /*_ UNITS ______________________________________________________________________________________________________________
-    
+
     Card
 
     Material Design alike card */
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $card-background-color:                     #FFF                                    !default;
-    $card-box-shadow:                           0 1px 4px 0px               
-                                                rgba(0, 0, 0, 0.2)                      !default;
-    $card-margin:                               0.5rem 0.5rem 0                         !default;
-    $card-border-width:                         0                                       !default;
-    $card-border-style:                         none                                    !default;
-             
-    
+    // $card-background-color
+    // $card-box-shadow
+    // $card-margin
+    // $card-border-width
+    // $card-border-style
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
     .card {
+
+        display: inline-block;
+
+        padding: $card-padding;
         background:     $card-background-color;
         box-shadow:     $card-box-shadow;
         margin:         $card-margin;

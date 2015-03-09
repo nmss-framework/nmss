@@ -12,9 +12,9 @@
     .a {
 
         &--hint {
-            font-weight: bold;
+            font-weight: $a--hint-font-weight;
             &:hover {
-                text-decoration: underline;
+                text-decoration: $a--hint-hover-text-decoration;
             }
         }
     }

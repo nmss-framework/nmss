@@ -528,6 +528,21 @@
 			}
 		},
 		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 883,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "gulpfile.js",
 			"settings":
 			{
@@ -539,7 +554,71 @@
 			"file": "doc/js/doc.js",
 			"settings":
 			{
-				"buffer_size": 2122,
+				"buffer_size": 2185,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/nmss.scss",
+			"settings":
+			{
+				"buffer_size": 4037,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/units/alert/_alert.scss",
+			"settings":
+			{
+				"buffer_size": 841,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/units/anchor/_anchor.scss",
+			"settings":
+			{
+				"buffer_size": 716,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/_defaults.scss",
+			"settings":
+			{
+				"buffer_size": 2656,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/units/badges/_badges.scss",
+			"settings":
+			{
+				"buffer_size": 848,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/units/button/_button.scss",
+			"settings":
+			{
+				"buffer_size": 4180,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/units/input/_input.scss",
+			"settings":
+			{
+				"buffer_size": 2291,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/_type.scss",
+			"settings":
+			{
+				"buffer_size": 3984,
 				"line_ending": "Windows"
 			}
 		},
@@ -773,12 +852,20 @@
 	],
 	"file_history":
 	[
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/package.json",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/bundle.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/doc.bundle.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/themes/_prototype.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/alert/_alert.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/card/_card.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/README.md",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/preview.html",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/grid/_grid.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/style.html",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/bundle.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/bin/doc.js",
+		"/C/Users/rlucha-sportmaniacs/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/rlucha-sportmaniacs/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/nmss.sublime-project",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/doc.bundle.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/package.json",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/grid/_grid.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/doc.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/config.xml",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/sportmaniacs-mobile-app/package.json",
@@ -792,16 +879,12 @@
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/elements.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/form/_form.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/figure/_figure.scss",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/card/_card.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/button/_button.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/badges/_badges.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/_defaults.scss",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/alert/_alert.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/css/doc.css",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/anchor/_anchor.scss",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/style.html",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/css/nmss.css",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/README.md",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/steps/_steps_tramos.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/gulpfile.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/menu.html",
@@ -866,7 +949,6 @@
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/common/directives/nmFocusMe.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/race/race.inscriptionList.friends.tpl",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/.idea/libraries/desktop_node_modules.xml",
-		"/C/Users/rlucha-sportmaniacs/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/rlucha-sportmaniacs/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/athlete/athlete.service.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/asdasd.js",
@@ -897,10 +979,7 @@
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/common/services/resources.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/img/icon_invalid.svg",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/common/directives/pagination.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/athletes/athletes.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/athletes/athletesClassification.photos.tpl",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/Gruntfile.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/scss/nmss/units/grid/_grid.scss"
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/athletes/athletes.js"
 	],
 	"find":
 	{
@@ -946,6 +1025,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" !default",
+			"#FFF",
+			"!default",
+			"res",
+			"when",
 			"observable",
 			"mobweb",
 			"serve",
@@ -1068,12 +1152,7 @@
 			");\n",
 			"sendEvent",
 			"UserTrackingService",
-			"');\n",
-			"actionsService",
-			"uiRouterPermissionsSrv::notAuthorized",
-			"searchResultsVm",
-			"nameField",
-			"closeModalApp"
+			"');\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1152,7 +1231,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1168,8 +1247,8 @@
 						"selection":
 						[
 							[
-								1565,
-								1553
+								279,
+								279
 							]
 						],
 						"settings":
@@ -1182,11 +1261,68 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "gulpfile.js",
 					"semi_transient": false,
 					"settings":
@@ -1212,30 +1348,30 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "doc/js/doc.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2122,
+						"buffer_size": 2185,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40,
-								40
+								135,
+								135
 							]
 						],
 						"settings":
@@ -1248,11 +1384,252 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
+					"file": "src/nmss.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2586,
+								2586
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 667.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/units/alert/_alert.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								410,
+								410
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/units/anchor/_anchor.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/_defaults.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2656,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1131,
+								1131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/units/badges/_badges.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								555,
+								555
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/units/button/_button.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								946,
+								946
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/units/input/_input.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								969,
+								969
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/_type.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								763,
+								763
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
 					"file": "doc/js/elements.js",
 					"semi_transient": false,
 					"settings":
@@ -1278,11 +1655,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
 					"file": "gulpfile.js",
 					"semi_transient": false,
 					"settings":
@@ -1308,7 +1685,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 14,
 					"type": "text"
 				}
 			]
@@ -1363,7 +1740,7 @@
 	"project": "nmss.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1371,6 +1748,38 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"type",
+				"src\\_type.scss"
+			],
+			[
+				"style",
+				"doc\\style.html"
+			],
+			[
+				"button",
+				"src\\units\\button\\_button.scss"
+			],
+			[
+				"alert",
+				"src\\units\\alert\\_alert.scss"
+			],
+			[
+				"def",
+				"src\\_defaults.scss"
+			],
+			[
+				"proto",
+				"src\\themes\\_prototype.scss"
+			],
+			[
+				"nmss",
+				"src\\nmss.scss"
+			],
+			[
+				"pac",
+				"package.json"
+			],
 			[
 				"elem",
 				"doc\\js\\elements.js"
@@ -1404,14 +1813,6 @@
 				"doc\\css\\doc.css"
 			],
 			[
-				"style",
-				"doc\\style.html"
-			],
-			[
-				"alert",
-				"src\\units\\alert\\_alert.scss"
-			],
-			[
 				"docjs",
 				"bin\\doc.js"
 			],
@@ -1440,14 +1841,6 @@
 				"src\\units\\grid\\_grid.scss"
 			],
 			[
-				"def",
-				"src\\_defaults.scss"
-			],
-			[
-				"type",
-				"src\\_type.scss"
-			],
-			[
 				"prev",
 				"doc\\preview.html"
 			],
@@ -1466,10 +1859,6 @@
 			[
 				"pre",
 				"doc\\preview.html"
-			],
-			[
-				"pac",
-				"package.json"
 			],
 			[
 				"pack",
@@ -1870,18 +2259,6 @@
 			[
 				"racelive",
 				"src\\nmfront\\race\\race.liveTiming.athlete.tpl"
-			],
-			[
-				"liveser",
-				"src\\nmfront\\race\\race.liveTiming.service.js"
-			],
-			[
-				"nms",
-				"temp\\nmfront\\common\\utils\\nmss.utils\\nmss.utils.js"
-			],
-			[
-				"homepaspe",
-				"test\\e2e\\homepage\\homepage.spec.js"
 			]
 		],
 		"width": 0.0
@@ -1902,7 +2279,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

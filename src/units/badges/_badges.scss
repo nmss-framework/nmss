@@ -12,12 +12,14 @@
 //  $badges-padding
 //  $badges-color
 
-
 //_ DEFINITION _________________________________________________________________________________________________________
 
 //#TODO abstract this
 
     .badges {
+        display: inline-block;
+
+        font-size: $badges-font-size;
         border-radius: $badges-boder-radius;
         background: $badges-background;
         padding: $badges-padding;

@@ -40,7 +40,7 @@ module.exports = function(elements) {
     };
 };
 
-document.addEventListener("DOMContentLoaded", function(event, rest) {
+document.addEventListener("DOMContentLoaded", function(event) {
 
     var emmet = require('./vendor/emmet.min.js');
     var rest = require('rest');
@@ -48,8 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event, rest) {
     var sectionCode = document.querySelector('#section-code');
     var previewer = document.querySelector('#section-preview');
 
-    rest('style.html').then(function(response) {
-        console.log(response);
+    rest('tpl/nmss.tpl').then(function(response) {
         sectionCode.value = response.entity;
     });
 
@@ -62,16 +61,16 @@ document.addEventListener("DOMContentLoaded", function(event, rest) {
     setInterval(rePaint, 1000);
 
     function rePaint(e) {
+
         previewer.contentWindow.document.open();
         previewer.contentWindow.document.write(
             '<!DOCTYPE html>' +
             '<html><head><title>My dynamic document</title>' +
-            '<link rel="stylesheet" href="css/nmss.css">' +
+            '<link rel="stylesheet" href="css/nmss.css?">' +
             '<link rel="stylesheet" href="css/doc.css">' +
             '</head>' +
             '<body class="wrapper-preview"><div class="content-preview">' + sectionCode.value.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, '') +
             '</div></body></html>');
         previewer.contentWindow.document.close();
     }
-
 });

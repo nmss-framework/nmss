@@ -36,20 +36,20 @@
         padding: $button-padding;
         border: $button-border;
         border-radius: $button-border-radius;
-        background: no-repeat center center $button-background;
+        background: $button-background;
         color: $button-color;
         font-weight: $button-font-weight;
         text-transform: $button-text-transform;
 
-        transition: all 300ms ease-out;
-        height: 2.5rem;
-        font-size: 0.9rem;
-        box-shadow: 0 1px 0px $button-background;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        background-size: auto, 10%;
+        // transition: all 300ms ease-out;
+        // height: 2.5rem;
+        // font-size: 0.9rem;
+        // box-shadow: 0 1px 0px $button-background;
+        // border: 1px solid rgba(0, 0, 0, 0.05);
+        // background-size: auto, 10%;
 
         &:hover {
-            background: no-repeat center center lighten($button-background, 20%);
+            background: no-repeat center center $button-hover-background;
             background-size: auto, 10%;
             box-shadow: 0 1px 0px $button-background;
         }

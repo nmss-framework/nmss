@@ -20,18 +20,18 @@
         border: $alert-border;
 
         &--success {
-            color: $alert-color;
-            background: $color-success;
+            color: $alert--success-color;
+            background: $color--success-background;
         }
 
         &--warning {
-            color: $alert-color;
-            background: $color-warning;
+            color: $alert--warning-color;
+            background: $color--warning-background;
         }
 
         &--error {
-            color: $alert-color;
-            background: $color-error;
+            color: $alert--error-color;
+            background: $color--error-background;
         }
     }
 
