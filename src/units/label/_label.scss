@@ -1,20 +1,19 @@
 /*_ UNITS ______________________________________________________________________________________________________________
-    
+
     Label
 
     Common label patterns */
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $label-padding:                             0                                       !default;
-    $label-border-width:                        0                                       !default;
-    $label-border-color:                        0                                       !default;
-    $label-border-style:                        none                                    !default;
+    // $label-padding
+    // $label-border-width
+    // $label-border-color
+    // $label-border-style
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
 .label {
-
     border: 0;
     padding: $label-padding;
     border-width: $label-border-width;
@@ -22,6 +21,17 @@
     border-style: $label-border-style;
     position: relative;
     @extend %type-ui;
+
+    @if $config-mark-optional-labels {
+        &:not([required]):after {
+            display: inline-block;
+            content: $label-not-required-after-content;
+            color: $label-not-required-after-color;
+            font-style: $label-not-required-after-font-style;
+            font-weight: $label-not-required-after-font-weight;
+            margin: $label-not-required-after-margin;
+        }
+    }
 }
 
 //_ VARIATIONS _________________________________________________________________________________________________________

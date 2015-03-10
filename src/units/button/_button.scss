@@ -65,11 +65,6 @@
 
     .button {
 
-        &--full {
-            display: block;
-            width: 100%;
-        }
-
         &--round {
             border-radius: 100%;
             line-height: 1;
@@ -89,6 +84,12 @@
 
         &--inline {
             padding: 0;
+            background:transparent;
+            text-transform: inherit;
+
+            &:hover {
+                background:transparent;
+            }
         }
 
         &--disabled {
@@ -102,11 +103,6 @@
                 background: #f0f0f0;
                 box-shadow: 0 1px 0px #f0f0f0;
             }
-        }
-
-        &--download {
-            background: #9ac695;
-            box-shadow: 0 1px 0px #9ac695;
         }
     }
 

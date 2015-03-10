@@ -28,14 +28,12 @@ var bundler = watchify(browserify(PATHS.doc + '/js/doc.js'));
 
 gulp.task('scss', function (){
     return gulp.src(PATHS.src + '/nmss.scss')
-    .pipe(plumber(onError()))
     .pipe(sass({
         outputStyle: 'compressed',
     }))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(PATHS.dist))
-    .pipe(gulp.dest(PATHS.doc + '/css'))
-    .pipe(server.notify());
+    .pipe(gulp.dest(PATHS.doc + '/css'));
 });
 
 gulp.task('js', function() {

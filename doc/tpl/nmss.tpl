@@ -16,25 +16,6 @@
     <a href="" class="a a--hint">Links a a--hint</a>
 </section>
 <section class="section">
-    <h2 class="section-title">Button</h2>
-    <h3 class="section-description">button</h3>
-    <button class="button">button</button>
-    <h3 class="section-description">button button--full</h3>
-    <button class="button button--full">button button--full</button>
-    <h3 class="section-description">button--round</h3>
-    <button class="button button--round">o</button>
-    <h3 class="section-description">button--flat</h3>
-    <button class="button button--flat">button button--flat</button>
-    <h3 class="section-description">button--inline</h3>
-    <button class="button button--inline">button button--inline</button>
-    <h3 class="section-description">button--disabled</h3>
-    <button class="button button--disabled">button button--disabled</button>
-    <h3 class="section-description">button--download</h3>
-    <button class="button button--download">button button--download</button>
-    <br>
-</section>
-
-<section class="section">
     <h2 class="section-title">Badges</h2>
     <h3 class="section-description">badges</h3>
     <div class="badges">Badges</div>
@@ -43,6 +24,43 @@
     <div class="badges">Badges</div>
     <div class="badges">Badges</div>
 </section>
+<section class="section">
+    <h2 class="section-title">Button</h2>
+    <h3 class="section-description">button</h3>
+    <button class="button">button</button>
+    <h3 class="section-description">button--round</h3>
+    <button class="button button--round">o</button>
+    <h3 class="section-description">button--flat</h3>
+    <button class="button button--flat">button button--flat</button>
+    <h3 class="section-description">button--inline</h3>
+    <button class="button button--inline">button button--inline</button>
+    <h3 class="section-description">button--disabled</h3>
+    <button class="button button--disabled">button button--disabled</button>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Card</h2>
+    <h3 class="section-description">card</h3>
+
+    <div class="g g[pad]">
+        <div class="g-u">
+            <div class="card">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat.
+            </div>
+        </div>
+        <div class="g-u">
+            <div class="card">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat.
+            </div>
+        </div>
+        <div class="g-u">
+            <div class="card">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat.
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section">
     <h2 class="section-title">Figure</h2>
     <div class="g g[pad]">
@@ -85,35 +103,12 @@
     </div>
 </section>
 <section class="section">
-    <h2 class="section-title">Card</h2>
-    <h3 class="section-description">card</h3>
-
-    <div class="g g[pad]">
-        <div class="g-u">
-            <div class="card">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat.
-            </div>
-        </div>
-        <div class="g-u">
-            <div class="card">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat.
-            </div>
-        </div>
-        <div class="g-u">
-            <div class="card">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat.
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
     <h2 class="section-title">Form</h2>
     <div class="form-group">
         <h3 class="section-description">label</h3>
         <label class="label">Label</label>
         <h3 class="section-description">label-optional</h3>
-        <label class="label">Label <span class="label-optional">Optional</span>
+        <label class="label">Label
         </label>
         <h3 class="section-description">input</h3>
         <input type="text" class="input" placeholder="input">
@@ -1013,6 +1008,14 @@
         <input class="input" type="radio" name="radio">Radio
     </label>
 </section>
+<section class="section">
+    <h2 class="section-title">Label</h2>
+    <h3 class="section-description">label</h3>
+    <label for="" class="label" required>label</label>
+    <h3 class="section-description">optional label (enable $config-mark-optional-labels on theme)</h3>
+    <label for="" class="label">This is a label</label>
+</section>
+
 <section class="section">
     <h2 class="section-title">Type</h2>
     <div class="type-display2">display2</div>

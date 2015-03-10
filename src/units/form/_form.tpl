@@ -4,7 +4,7 @@
         <h3 class="section-description">label</h3>
         <label class="label">Label</label>
         <h3 class="section-description">label-optional</h3>
-        <label class="label">Label <span class="label-optional">Optional</span>
+        <label class="label">Label
         </label>
         <h3 class="section-description">input</h3>
         <input type="text" class="input" placeholder="input">
