@@ -40,16 +40,14 @@ gulp.task('js', function() {
     return bundler.bundle()
     .pipe(plumber(onError()))
     .pipe(source('doc.bundle.js'))
-    .pipe(gulp.dest(PATHS.doc + '/'))
-    .pipe(server.notify());
+    .pipe(gulp.dest(PATHS.doc + '/'));
 });
 
 gulp.task('tpl', function() {
     return gulp.src(PATHS.src + '/**/*.tpl')
     .pipe(plumber(onError()))
     .pipe(concat('nmss.tpl'))
-    .pipe(gulp.dest(PATHS.doc + '/tpl'))
-    .pipe(server.notify());
+    .pipe(gulp.dest(PATHS.doc + '/tpl'));
 });
 
 gulp.task("serve", function() {
