@@ -511,6 +511,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 1597,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -735,24 +743,16 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/css",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/label"
-	],
 	"file_history":
 	[
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/package.json",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/utils/_utils.scss",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/nmss.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/gulpfile.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/index.html",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/package.json",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/doc.bundle.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/drag.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/doc.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/utils/_utils.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/css/doc.css",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/units/icon/_icon.tpl",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/desktop/src/nmfront/cart/cart.tpl",
@@ -872,8 +872,7 @@
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/config/app.config.int.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/config/app.config.serve.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/common/directives/clickOnce.js",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/documentation/source-files/sportmaniacs/mobileClient/src_app_common_directives_notification.js.txt",
-		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/src/mobweb/login/login.resetpassword.tpl"
+		"/C/Users/rlucha-sportmaniacs/Desktop/sportmaniacs/mobile/mobileFirst/doc/documentation/source-files/sportmaniacs/mobileClient/src_app_common_directives_notification.js.txt"
 	],
 	"find":
 	{
@@ -1131,6 +1130,42 @@
 	"groups":
 	[
 		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								876,
+								876
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
 			"sheets":
 			[
 			]
@@ -1153,11 +1188,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
