@@ -6,15 +6,21 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-//  property                                    value                                   !default;
+
+//  $optionGroup-color
+//  $optionGroup-color-hint
+//  $optionGroup-color-hint-lighter
+
+//  $optionGroup-border-width
+//  $optionGroup-border-color
 
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
     .optionGroup {
 
-        padding: 1px;
-        position: relative;
+        display: flex;
+        flex-wrap: wrap;
 
         &-label {
             padding: 0.5rem;
@@ -23,7 +29,6 @@
 
             -webkit-touch-callout: none;
             -webkit-user-select: none;
-            -khtml-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
@@ -31,7 +36,7 @@
             @extend %type-data;
 
             &:hover {
-                background: $color-hint-lighter;
+                background: $optionGroup-color-hint-lighter;
             }
         }
 
@@ -44,11 +49,10 @@
         }
 
         &-option {
-            display: inline-block;
-            border-width: 1px 1px 1px 0;
-            border:1px solid #DDD;
-            margin: 0 -1px -1px 0;
-            background:#FFF;
+
+            border: $optionGroup-border-width solid $optionGroup-border-color;
+            margin: 0 (-$optionGroup-border-width) (-$optionGroup-border-width) 0;
+            background: $optionGroup-color;
 
             &:first-child {
                 margin-left: 0;
@@ -61,7 +65,7 @@
         }
 
         input[type=radio]:checked + .optionGroup-label{
-            background: $color-hint;
+            background: $optionGroup-color-hint;
             color: #FFF;
         }
 

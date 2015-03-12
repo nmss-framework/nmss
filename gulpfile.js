@@ -7,7 +7,6 @@ var watch        = require('gulp-watch');
 var concat       = require('gulp-concat');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-var rename       = require('gulp-rename');
 var server       = require('gulp-express');
 var plumber      = require('gulp-plumber');
 
