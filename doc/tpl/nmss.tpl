@@ -39,6 +39,47 @@
 </section>
 
 <section class="section">
+    <h2 class="section-title">Figure</h2>
+    <div class="g g[pad]">
+        <div class="g-u">
+            <h3 class="section-description">figure card figure--16-9</h3>
+            <figure class="figure card">
+                <div class="figure-imageContainer figure--16-9" title="">
+                    <div class="figure-image" style="background-image: url(http://lorempixel.com/g/400/200/);"></div>
+                </div>
+                <figcaption class="figure-caption">
+                    <div class="figure-text">XX Subida Al Terrero de Chella</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat,</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="g-u">
+            <h3 class="section-description">figure card figure--21-9</h3>
+            <figure class="figure card">
+                <div class="figure-imageContainer figure--21-9" title="">
+                    <div class="figure-image" style="background-image: url(http://lorempixel.com/g/400/200/);"></div>
+                </div>
+                <figcaption class="figure-caption">
+                    <div class="figure-text">XX Subida Al Terrero de Chella</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat,</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="g-u">
+            <h3 class="section-description">figure card figure--1-2</h3>
+            <figure class="figure card">
+                <div class="figure-imageContainer figure--1-2" title="">
+                    <div class="figure-image" style="background-image: url(http://lorempixel.com/g/400/200/);"></div>
+                </div>
+                <figcaption class="figure-caption">
+                    <div class="figure-text">XX Subida Al Terrero de Chella</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat,</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+<section class="section">
     <h2 class="section-title">Card</h2>
     <h3 class="section-description">card</h3>
 
@@ -91,301 +132,6 @@
         <div class="form-section">
             <label class="label">Form-section label</label>
             <input type="text" class="input" placeholder="input">
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <h2 class="section-title">Figure</h2>
-    <div class="g g[pad]">
-        <div class="g-u">
-            <h3 class="section-description">figure card figure--16-9</h3>
-            <figure class="figure card">
-                <div class="figure-imageContainer figure--16-9" title="">
-                    <div class="figure-image" style="background-image: url(http://lorempixel.com/g/400/200/);"></div>
-                </div>
-                <figcaption class="figure-caption">
-                    <div class="figure-text">XX Subida Al Terrero de Chella</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat,</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="g-u">
-            <h3 class="section-description">figure card figure--21-9</h3>
-            <figure class="figure card">
-                <div class="figure-imageContainer figure--21-9" title="">
-                    <div class="figure-image" style="background-image: url(http://lorempixel.com/g/400/200/);"></div>
-                </div>
-                <figcaption class="figure-caption">
-                    <div class="figure-text">XX Subida Al Terrero de Chella</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat,</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="g-u">
-            <h3 class="section-description">figure card figure--1-2</h3>
-            <figure class="figure card">
-                <div class="figure-imageContainer figure--1-2" title="">
-                    <div class="figure-image" style="background-image: url(http://lorempixel.com/g/400/200/);"></div>
-                </div>
-                <figcaption class="figure-caption">
-                    <div class="figure-text">XX Subida Al Terrero de Chella</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut turpis non mi molestie venenatis vitae ut nulla. Etiam eu metus volutpat,</p>
-                </figcaption>
-            </figure>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <h2 class="section-title">Grid</h2>
-    <h3 class="section-description">Normal grid, content is scaled to width</h3>
-    <div class="g">
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-    </div>
-    <div class="g">
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-    </div>
-
-<h3 class="section-description">Padded grid g[pad], content is scaled to width</h3>
-    <div class="g g[pad]">
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg">g-u</div>
-        </div>
-    </div>
-    <div class="g g[pad]">
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="g-u">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-    </div>
-
-    <h3 class="section-description">Inline grid g-i gi[pad], container does not wrap content </h3>
-
-    <div class="gi gi[pad]">
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg">gi-u</div>
-        </div>
-    </div>
-
-    <div class="gi gi[pad]">
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-        <div class="gi-u u-3rd">
-            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
         </div>
     </div>
 </section>
@@ -990,6 +736,260 @@
 </section>
 
 <section class="section">
+    <h2 class="section-title">Grid</h2>
+    <h3 class="section-description">Normal grid, content is scaled to width</h3>
+    <div class="g">
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+    </div>
+    <div class="g">
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+    </div>
+
+<h3 class="section-description">Padded grid g[pad], content is scaled to width</h3>
+    <div class="g g[pad]">
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg">g-u</div>
+        </div>
+    </div>
+    <div class="g g[pad]">
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="g-u">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+    </div>
+
+    <h3 class="section-description">Inline grid g-i gi[pad], container does not wrap content </h3>
+
+    <div class="gi gi[pad]">
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg">gi-u</div>
+        </div>
+    </div>
+
+    <div class="gi gi[pad]">
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+        <div class="gi-u u-3rd">
+            <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
 <h2 class="section-title">Input</h2>
 
     <h3 class="section-description">input</h3>
@@ -1015,6 +1015,17 @@
     <label for="" class="label">This is a label</label>
 </section>
 
+<div class="modal hide">
+<!-- modal.tpl -->
+    <div class="modal-overlay show">
+        <div class="modal-content show">
+            <div class="modal-close"><i class="fa fa-times"></i></div>
+            <div class="modal-content">
+                This is a modal
+            </div>
+        </div>
+    </div>
+</div>
 <section class="section">
     <h2 class="section-title">Type</h2>
     <div class="type-display2">display2</div>

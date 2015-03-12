@@ -511,14 +511,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 1597,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -747,8 +739,8 @@
 	[
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/package.json",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/utils/_utils.scss",
-		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/nmss.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/gulpfile.js",
+		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/src/nmss.scss",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/index.html",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/doc.bundle.js",
 		"/C/Users/rlucha-sportmaniacs/Desktop/@rlucha/nmss/doc/js/drag.js",
@@ -1130,39 +1122,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1597,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								876,
-								876
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		},
 		{
