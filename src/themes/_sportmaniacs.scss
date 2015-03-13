@@ -196,3 +196,13 @@
     $label-not-required-after-font-style:       italic;
     $label-not-required-after-font-weight:      bold;
     $label-not-required-after-margin:           0 0 0 0.5rem;
+
+
+//  Option Group
+
+$optionGroup-color:                         #FFFFFF;
+$optionGroup-color-hint:                    $color-hint;
+$optionGroup-color-hint-lighter:            $color-hint-lighter;
+
+$optionGroup-border-width:                  1px;
+$optionGroup-border-color:                  $color-primary-light;
