@@ -200,9 +200,20 @@
 
 //  Option Group
 
-$optionGroup-color:                         #FFFFFF;
-$optionGroup-color-hint:                    $color-hint;
-$optionGroup-color-hint-lighter:            $color-hint-lighter;
+    $optionGroup-color:                         #FFF;
+    $optionGroup-color-hint:                    $color-hint;
+    $optionGroup-color-hint-lighter:            $color-hint-lighter;
 
-$optionGroup-border-width:                  1px;
-$optionGroup-border-color:                  $color-primary-light;
+    $optionGroup-border-width:                  1px;
+    $optionGroup-border-color:                  $color-primary-light;
+
+// Pagination
+
+    $pagination-background-color:               rgba(0, 0, 0, 0.03);
+    $pagination-background-image:               linear-gradient(to bottom, rgba(0, 0, 0, 0.1) -60%, transparent 20%);
+    $pagination-border-top-color:               #FFF;
+    $pagination-color:                          inherit;
+
+    $pagination-page-active-background:         rgba(249, 214, 6, 0.5);
+    $pagination-page-active-color:              inherit;
+    $pagination-page-active-weight:             bold;

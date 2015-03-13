@@ -29,8 +29,12 @@
             }
 
             .label-optional {
-                font-style: italic;
-                color: #999;
+                display: inline-block;
+
+                color:    $form-label-optional-color;
+                font-weight: $form-label-optional-font-weight;
+                font-style: $form-label-optional-font-style;
+                margin:   $form-label-optional-margin;
             }
 
         }
@@ -46,6 +50,7 @@
             border: 1px solid #e0e0e0;
             @extend %cf;
         }
+
     }
 
 //_ VARIATIONS _________________________________________________________________________________________________________

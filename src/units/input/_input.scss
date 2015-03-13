@@ -7,17 +7,11 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    // $input-padding
-    // $input-text-border-width
-    // $input-text-border-color
-    // $input-text-border-style
-    // $input-text-border-radius
-
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
-.input {
 
+.input {
     width: 100%;
 
     &:focus {
@@ -32,13 +26,14 @@
     &[type="password"],
     &[type="phone"]
      {
-        padding:        $input-padding;
+        color:          $input-text-color;
+        font-size:      $input-text-font-size;
+        padding:        $input-text-padding;
         border-width:   $input-text-border-width;
         border-color:   $input-text-border-color;
         border-style:   $input-text-border-style;
         border-radius:  $input-text-border-radius;
-
-        box-sizing: border-box;
+        height:         $input-text-height;
     }
 
     &[type="radio"] {

@@ -31,16 +31,5 @@
     position: relative;
     @extend %type-ui;
 
-    @if $config-mark-optional-labels {
-        &:not([required]):after {
-            display: inline-block;
-            content: $label-not-required-after-content;
-            color: $label-not-required-after-color;
-            font-style: $label-not-required-after-font-style;
-            font-weight: $label-not-required-after-font-weight;
-            margin: $label-not-required-after-margin;
-        }
-    }
 }
-
 //_ VARIATIONS _________________________________________________________________________________________________________

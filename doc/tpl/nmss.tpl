@@ -16,6 +16,15 @@
     <a href="" class="a a--hint">Links a a--hint</a>
 </section>
 <section class="section">
+    <h2 class="section-title">Badges</h2>
+    <h3 class="section-description">badges</h3>
+    <div class="badges">Badges</div>
+    <div class="badges">Badges</div>
+    <div class="badges">Badges</div>
+    <div class="badges">Badges</div>
+    <div class="badges">Badges</div>
+</section>
+<section class="section">
     <h2 class="section-title">Button</h2>
     <h3 class="section-description">button</h3>
     <button class="button">button</button>
@@ -29,15 +38,6 @@
     <button class="button button--disabled">button button--disabled</button>
 </section>
 
-<section class="section">
-    <h2 class="section-title">Badges</h2>
-    <h3 class="section-description">badges</h3>
-    <div class="badges">Badges</div>
-    <div class="badges">Badges</div>
-    <div class="badges">Badges</div>
-    <div class="badges">Badges</div>
-    <div class="badges">Badges</div>
-</section>
 <section class="section">
     <h2 class="section-title">Card</h2>
     <h3 class="section-description">card</h3>
@@ -102,6 +102,40 @@
         </div>
     </div>
 </section>
+<section class="section">
+    <h2 class="section-title">Form</h2>
+    <div class="form-group">
+        <h3 class="section-description">label</h3>
+        <label class="label">Label</label>
+        <h3 class="section-description">label-optional</h3>
+        <label class="label label-optional">Label</label>
+
+        <h3 class="section-description">input</h3>
+        <input type="text" class="input" placeholder="input">
+
+        <h3 class="section-description">input [disabled] [readonly]</h3>
+        <input type="text" class="input" disabled placeholder="input">
+
+        <h3 class="section-description">select</h3>
+        <select class="select">
+            <option value="">Select</option>
+        </select>
+        <h3 class="section-description">checkbox</h3>
+        <label class="label label--checkbox" for="checkbox">
+            <input type="checkbox" class="input" name="checkbox">Check Box
+        </label>
+        <h3 class="section-description">radio</h3>
+        <label class="label label--radio" for="radio">
+            <input class="input" type="radio" name="radio">Radio
+        </label>
+        <h3 class="section-description">form-section</h3>
+        <div class="form-section">
+            <label class="label">Form-section label</label>
+            <input type="text" class="input" placeholder="input">
+        </div>
+    </div>
+</section>
+
 <section class="section">
     <h2 class="section-title">Grid</h2>
     <h3 class="section-description">Normal grid, content is scaled to width</h3>
@@ -352,40 +386,6 @@
         </div>
         <div class="gi-u u-3rd">
             <div class="doc-helper-bg"><img src="http://lorempixel.com/g/100/100/cats" alt=""></div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <h2 class="section-title">Form</h2>
-    <div class="form-group">
-        <h3 class="section-description">label</h3>
-        <label class="label">Label</label>
-        <h3 class="section-description">label-optional</h3>
-        <label class="label">Label
-        </label>
-        <h3 class="section-description">input</h3>
-        <input type="text" class="input" placeholder="input">
-
-        <h3 class="section-description">input [disabled] [readonly]</h3>
-        <input type="text" class="input" disabled placeholder="input">
-
-        <h3 class="section-description">select</h3>
-        <select class="select">
-            <option value="">Select</option>
-        </select>
-        <h3 class="section-description">checkbox</h3>
-        <label class="label label--checkbox" for="checkbox">
-            <input type="checkbox" class="input" name="checkbox">Check Box
-        </label>
-        <h3 class="section-description">radio</h3>
-        <label class="label label--radio" for="radio">
-            <input class="input" type="radio" name="radio">Radio
-        </label>
-        <h3 class="section-description">form-section</h3>
-        <div class="form-section">
-            <label class="label">Form-section label</label>
-            <input type="text" class="input" placeholder="input">
         </div>
     </div>
 </section>
@@ -1007,6 +1007,11 @@
         <input class="input" type="radio" name="radio">Radio
     </label>
 </section>
+<section class="section">
+    <h2 class="section-title">Label</h2>
+    <h3 class="section-description">label</h3>
+    <label for="" class="label">label</label>
+</section>
 <div class="modal hide">
 <!-- modal.tpl -->
     <div class="modal-overlay show">
@@ -1018,14 +1023,6 @@
         </div>
     </div>
 </div>
-<section class="section">
-    <h2 class="section-title">Label</h2>
-    <h3 class="section-description">label</h3>
-    <label for="" class="label" required>label</label>
-    <h3 class="section-description">optional label (enable $config-mark-optional-labels on theme)</h3>
-    <label for="" class="label">This is a label</label>
-</section>
-
 <section class="section">
     <h2 class="section-title">Nav</h2>
 
@@ -1064,6 +1061,257 @@
             <label class="optionGroup-label" for="4">option 4</label>
         </div>
     </div>
+</section>
+<section class="section">
+    <h2 class="section-title">Pagination</h2>
+
+    <nav class="pagination">
+        <div class="g">
+            <div class="g-u">
+                <a href="#" class="pagination-page pagination-page--active">1</a>
+                <a href="#" class="pagination-page">2</a>
+                <a href="#" class="pagination-page">3</a>
+                <a href="#" class="pagination-page">4</a>
+                <a href="#" class="pagination-page">5</a>
+                <a href="#" class="pagination-page">6</a>
+                <a href="#" class="pagination-page">7</a>
+                <a href="#" class="pagination-page">8</a>
+                <a href="#" class="pagination-page">9</a>
+                <a href="#" class="pagination-page">10</a>
+                <a href="#" class="pagination-page">11</a>
+                <a href="#" class="pagination-page">12</a>
+            </div>
+
+            <div class="g-u u-25">
+                <select name="" id="" class="pagination-select select">
+                    <option value="" class="">
+                        Ver más
+                    </option>
+                    <option value="0">13</option>
+                    <option value="1">14</option>
+                    <option value="2">15</option>
+                    <option value="3">16</option>
+                    <option value="4">17</option>
+                    <option value="5">18</option>
+                    <option value="6">19</option>
+                    <option value="7">20</option>
+                    <option value="8">21</option>
+                    <option value="9">22</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Select</h2>
+
+    <h3 class="section-description">select</h3>
+    <select class="select" name="" id="">
+        <option value="">option 1</option>
+        <option value="">option 2</option>
+        <option value="">option 3</option>
+        <option value="">option 4</option>
+        <option value="">option 5</option>
+    </select>
+
+
+
+
+</section>
+<section class="section">
+    <h2 class="section-title">Tabs</h2>
+
+    <div class="tabContainer">
+        <div class="wrap">
+            <div class="g">
+                <div class="g-u">
+                    <nav class="tab">
+                        <a class="tab-item tab-item--active">Carreras próximas</a>
+                        <a class="tab-item">Últimas clasificaciones</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+
+    <h2 class="section-title">Tables</h2>
+
+    <h3 class="section-description">table</h3>
+
+    <table class="table u-mb[2x]">
+        <thead>
+            <tr class="table-tr">
+                <th class="table-th">Number</th>
+                <th class="table-th">First Name</th>
+                <th class="table-th">Last Name</th>
+                <th class="table-th">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-tr">
+                <td class="table-td">1</td>
+                <td class="table-td">Eve</td>
+                <td class="table-td">Jackson</td>
+                <td class="table-td">94</td>
+            </tr>
+            <tr class="table-tr">
+                <td class="table-td">2</td>
+                <td class="table-td">John</td>
+                <td class="table-td">Doe</td>
+                <td class="table-td">80</td>
+            </tr>
+            <tr class="table-tr">
+                <td class="table-td">3</td>
+                <td class="table-td">Adam</td>
+                <td class="table-td">Johnson</td>
+                <td class="table-td">67</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="section-description">table--inline</h3>
+
+    <table class="table table--inline u-mb[2x]">
+        <thead>
+        <tr class="table-tr">
+            <th class="table-th">Number</th>
+            <th class="table-th">First Name</th>
+            <th class="table-th">Last Name</th>
+            <th class="table-th">Points</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-tr">
+            <td class="table-td">1</td>
+            <td class="table-td">Eve</td>
+            <td class="table-td">Jackson</td>
+            <td class="table-td">94</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-td">2</td>
+            <td class="table-td">John</td>
+            <td class="table-td">Doe</td>
+            <td class="table-td">80</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-td">3</td>
+            <td class="table-td">Adam</td>
+            <td class="table-td">Johnson</td>
+            <td class="table-td">67</td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+    <h3 class="section-description">table--interactive</h3>
+
+    <table class="table table--interactive u-mb[2x]">
+        <thead>
+        <tr class="table-tr">
+            <th class="table-th">Number</th>
+            <th class="table-th">First Name</th>
+            <th class="table-th">Last Name</th>
+            <th class="table-th">Points</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-tr">
+            <td class="table-td">1</td>
+            <td class="table-td">Eve</td>
+            <td class="table-td">Jackson</td>
+            <td class="table-td">94</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-td">2</td>
+            <td class="table-td">John</td>
+            <td class="table-td">Doe</td>
+            <td class="table-td">80</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-td">3</td>
+            <td class="table-td">Adam</td>
+            <td class="table-td">Johnson</td>
+            <td class="table-td">67</td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+    <h3 class="section-description">table--fixed</h3>
+
+    <table class="table table--fixed u-mb[2x]">
+        <thead>
+        <tr class="table-tr">
+            <th class="table-th">Number</th>
+            <th class="table-th">First Name</th>
+            <th class="table-th">Last Name</th>
+            <th class="table-th">Points</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-tr">
+            <td class="table-td">1</td>
+            <td class="table-td">Eve</td>
+            <td class="table-td">Jackson</td>
+            <td class="table-td">94</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-td">2</td>
+            <td class="table-td">John</td>
+            <td class="table-td">Doe</td>
+            <td class="table-td">80</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-td">3</td>
+            <td class="table-td">Adam</td>
+            <td class="table-td">Johnson</td>
+            <td class="table-td">67</td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+    <h3 class="section-description">table--borderless</h3>
+
+    <table class="table table--borderless u-mb[2x]">
+        <thead>
+        <tr class="table-tr">
+            <th class="table-th">Number</th>
+            <th class="table-th">First Name</th>
+            <th class="table-th">Last Name</th>
+            <th class="table-th">Points</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-tr">
+            <td class="table-td">1</td>
+            <td class="table-td">Eve</td>
+            <td class="table-td">Jackson</td>
+            <td class="table-td">94</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-td">2</td>
+            <td class="table-td">John</td>
+            <td class="table-td">Doe</td>
+            <td class="table-td">80</td>
+        </tr>
+        <tr class="table-tr">
+            <td class="table-td">3</td>
+            <td class="table-td">Adam</td>
+            <td class="table-td">Johnson</td>
+            <td class="table-td">67</td>
+        </tr>
+
+        </tbody>
+
+    </table>
 </section>
 <section class="section">
     <h2 class="section-title">Type</h2>
