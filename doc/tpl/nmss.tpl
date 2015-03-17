@@ -16,15 +16,6 @@
     <a href="" class="a a--hint">Links a a--hint</a>
 </section>
 <section class="section">
-    <h2 class="section-title">Badges</h2>
-    <h3 class="section-description">badges</h3>
-    <div class="badges">Badges</div>
-    <div class="badges">Badges</div>
-    <div class="badges">Badges</div>
-    <div class="badges">Badges</div>
-    <div class="badges">Badges</div>
-</section>
-<section class="section">
     <h2 class="section-title">Button</h2>
     <h3 class="section-description">button</h3>
     <button class="button">button</button>
@@ -38,6 +29,15 @@
     <button class="button button--disabled">button button--disabled</button>
 </section>
 
+<section class="section">
+    <h2 class="section-title">Badges</h2>
+    <h3 class="section-description">badges</h3>
+    <div class="badges">Badges</div>
+    <div class="badges">Badges</div>
+    <div class="badges">Badges</div>
+    <div class="badges">Badges</div>
+    <div class="badges">Badges</div>
+</section>
 <section class="section">
     <h2 class="section-title">Card</h2>
     <h3 class="section-description">card</h3>
@@ -135,6 +135,13 @@
         </div>
 
         <div class="gi">
+            <div class="gi-u">
+                <select name="" id="" class="select">
+                    <option value="">one</option>
+                    <option value="">two</option>
+                    <option value="">three</option>
+                </select>
+            </div>
             <div class="gi-u">
                 <input type="text" placeholder="input" class="input"/>
             </div>
@@ -1160,15 +1167,9 @@
     <h2 class="section-title">Steps</h2>
 
     <nav class="steps">
-        <a class="steps-item type-data steps-item--active">
-            <span class="steps-itemValue" title="5,5K">5,5K </span>
-        </a>
-        <a class="steps-item type-data">
-            <span class="steps-itemValue" title="10K">10K </span>
-        </a>
-        <a class="steps-item type-data">
-            <span class="steps-itemValue" title="META">META </span>
-        </a>
+        <a class="steps-item type-data steps-item--active">FIRST STEP</a>
+        <a class="steps-item type-data">SECOND STEP</a>
+        <a class="steps-item type-data">THIRD STEP</a>
     </nav>
 </section>
 <section class="section">
@@ -1182,18 +1183,6 @@
         <i class="switch-handle"></i>
     </button>
 </section>
-<section class="section">
-    <h2 class="section-title">Tabs</h2>
-
-    <nav class="tabs">
-        <a class="tabs-item tabs-item--active">First option</a>
-        <a class="tabs-item">Second option</a>
-        <a class="tabs-item">Third Option</a>
-        <a class="tabs-item">Fourth Option</a>
-    </nav>
-
-</section>
-
 <section class="section">
 
     <h2 class="section-title">Tables</h2>
@@ -1371,6 +1360,18 @@
 
     </table>
 </section>
+<section class="section">
+    <h2 class="section-title">Tabs</h2>
+
+    <nav class="tabs">
+        <a class="tabs-item tabs-item--active">First option</a>
+        <a class="tabs-item">Second option</a>
+        <a class="tabs-item">Third Option</a>
+        <a class="tabs-item">Fourth Option</a>
+    </nav>
+
+</section>
+
 <section class="section">
     <h2 class="section-title u-mb[2x]">Tooltip</h2>
     <br class="u-mb[2x]" />

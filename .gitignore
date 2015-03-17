@@ -1,4 +1,4 @@
 node_modules
-dist/nmss.css
-doc/css/nmss.css
+dist/
+doc/css/themes/
 .idea/

@@ -8,6 +8,8 @@ $button-background:                         no-repeat center center $color-prima
 $button-hover-background:                   $color-primary-light;
 $button-color:                              $color-primary-darker;
 $button-font-weight:                        bold;
+$button-transition:                         all 300ms ease-out;
+
 
 $button--flat-border-style:                 solid;
 $button--flat-border-width:                 1px;

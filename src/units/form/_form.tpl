@@ -32,6 +32,13 @@
 
         <div class="gi">
             <div class="gi-u">
+                <select name="" id="" class="select">
+                    <option value="">one</option>
+                    <option value="">two</option>
+                    <option value="">three</option>
+                </select>
+            </div>
+            <div class="gi-u">
                 <input type="text" placeholder="input" class="input"/>
             </div>
             <div class="gi-u">

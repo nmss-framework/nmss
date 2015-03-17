@@ -34,7 +34,7 @@ gulp.task('scss', function (){
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(PATHS.dist))
 
-    .pipe(gulp.dest(PATHS.doc + '/css/'));
+    .pipe(gulp.dest(PATHS.doc + '/css/themes/'));
 });
 
 gulp.task('js', function() {
