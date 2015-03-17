@@ -1,0 +1,16 @@
+//  Input
+
+    $input-text-font-size:                      1rem;
+    $input-text-color:                          inherit;
+    $input-text-padding:                        $input-text-font-size*0.6;
+    $input-text-border-width:                   1px;
+    $input-text-border-color:                   rgba(0,0,0,0.1);
+    $input-text-border-style:                   solid;
+    $input-text-border-radius:                  0;
+    $input-text-height:                         strip-unit($input-text-font-size)*strip-unit($input-text-padding)*(5)+rem;
+    $input-text-background:                     #FFF;
+    $input-focus-outline:                       1px solid $color-hint-light;
+
+    $input-disabled-color:                      #CCC;
+    $input-disabled-background:                 #fcfcfc !important;
+    $input-disabled-border:                     1px solid $color-primary-lighter !important;

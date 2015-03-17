@@ -19,12 +19,11 @@
     .badges {
         display: inline-block;
 
-        font-size: $badges-font-size;
-        border-radius: $badges-boder-radius;
-        background: $badges-background;
-        padding: $badges-padding;
-        color: $badges-color;
-        color: green;
+        font-size:      $badges-font-size;
+        border-radius:  $badges-border-radius;
+        background:     $badges-background;
+        padding:        $badges-padding;
+        color:          $badges-color;
     }
 
 //_ VARIATIONS _________________________________________________________________________________________________________

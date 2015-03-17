@@ -9,13 +9,13 @@ var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var server       = require('gulp-express');
 var plumber      = require('gulp-plumber');
+var util = require('gulp-util');
 
 var PATHS = {
     src: './src',
     dist: './dist',
     doc: './doc'
 };
-
 
 function onError() {
     return function() {
@@ -26,13 +26,15 @@ function onError() {
 var bundler = watchify(browserify(PATHS.doc + '/js/doc.js'));
 
 gulp.task('scss', function (){
-    return gulp.src(PATHS.src + '/nmss.scss')
+    return gulp.src( PATHS.src + '/themes/' + (util.env.theme ? util.env.theme : 'prototype') + '/*.scss')
     .pipe(sass({
         outputStyle: 'compressed',
+        errLogToConsole: true
     }))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(PATHS.dist))
-    .pipe(gulp.dest(PATHS.doc + '/css'));
+
+    .pipe(gulp.dest(PATHS.doc + '/css/'));
 });
 
 gulp.task('js', function() {

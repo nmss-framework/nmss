@@ -108,7 +108,7 @@
         <h3 class="section-description">label</h3>
         <label class="label">Label</label>
         <h3 class="section-description">label-optional</h3>
-        <label class="label label-optional">Label</label>
+        <label class="label">Label <span class="label-optional">OPTIONAL</span></label>
 
         <h3 class="section-description">input</h3>
         <input type="text" class="input" placeholder="input">
@@ -129,9 +129,18 @@
             <input class="input" type="radio" name="radio">Radio
         </label>
         <h3 class="section-description">form-section</h3>
-        <div class="form-section">
+        <div class="form-section u-mb[2x]">
             <label class="label">Form-section label</label>
             <input type="text" class="input" placeholder="input">
+        </div>
+
+        <div class="gi">
+            <div class="gi-u">
+                <input type="text" placeholder="input" class="input"/>
+            </div>
+            <div class="gi-u">
+                <input type="submit" class="button" value="button"/>
+            </div>
         </div>
     </div>
 </section>
@@ -1041,26 +1050,47 @@
     </ul>
 </section>
 <section class="section">
-    <h2 class="section-title">Option Group</h2>
+    <h2 class="section-title">Option Group (default)</h2>
+
+    <div class="optionGroup u-mb[2x]">
+        <div class="optionGroup-option optionGroup-option--selected">
+            <div class="optionGroup-content">option 1</div>
+        </div>
+        <div class="optionGroup-option">
+            <div class="optionGroup-content">option 2</div>
+        </div>
+        <div class="optionGroup-option">
+            <div class="optionGroup-content">option 3</div>
+        </div>
+        <div class="optionGroup-option">
+            <div class="optionGroup-content">option 4</div>
+        </div>
+    </div>
+
+
+    <h2 class="section-title">Option Group (radio button hack)</h2>
 
     <div class="optionGroup">
+
         <div class="optionGroup-option">
             <input name="data" id="1" type="radio" class="optionGroup-radio" value="1" required="required">
-            <label class="optionGroup-label" for="1">option 1</label>
+            <label class="optionGroup-content" for="1">option 1</label>
         </div>
         <div class="optionGroup-option">
             <input name="data" id="2" type="radio" class="optionGroup-radio" value="2" required="required">
-            <label class="optionGroup-label" for="2">option 2</label>
+            <label class="optionGroup-content" for="2">option 2</label>
         </div>
         <div class="optionGroup-option">
             <input name="data" id="3" type="radio" class="optionGroup-radio" value="3" required="required">
-            <label class="optionGroup-label" for="3">option 3</label>
+            <label class="optionGroup-content" for="3">option 3</label>
         </div>
         <div class="optionGroup-option">
             <input name="data" id="4" type="radio" class="optionGroup-radio" value="4" required="required">
-            <label class="optionGroup-label" for="4">option 4</label>
+            <label class="optionGroup-content" for="4">option 4</label>
         </div>
     </div>
+
+
 </section>
 <section class="section">
     <h2 class="section-title">Pagination</h2>
@@ -1116,24 +1146,52 @@
     </select>
 
 
+    <h3 class="section-description">select[disabled][readonly]</h3>
+    <select class="select" name="" id="" disabled>
+        <option value="">option 1</option>
+        <option value="">option 2</option>
+        <option value="">option 3</option>
+        <option value="">option 4</option>
+        <option value="">option 5</option>
+    </select>
 
+</section>
+<section class="section">
+    <h2 class="section-title">Steps</h2>
 
+    <nav class="steps">
+        <a class="steps-item type-data steps-item--active">
+            <span class="steps-itemValue" title="5,5K">5,5K </span>
+        </a>
+        <a class="steps-item type-data">
+            <span class="steps-itemValue" title="10K">10K </span>
+        </a>
+        <a class="steps-item type-data">
+            <span class="steps-itemValue" title="META">META </span>
+        </a>
+    </nav>
+</section>
+<section class="section">
+    <h2 class="section-title">Switch</h2>
+    <h3 class="section-description">off</h3>
+    <button class="switch">
+        <i class="switch-handle fa fa-eye"></i>
+    </button>
+    <h3 class="section-description">on</h3>
+    <button class="switch switch--on">
+        <i class="switch-handle"></i>
+    </button>
 </section>
 <section class="section">
     <h2 class="section-title">Tabs</h2>
 
-    <div class="tabContainer">
-        <div class="wrap">
-            <div class="g">
-                <div class="g-u">
-                    <nav class="tab">
-                        <a class="tab-item tab-item--active">Carreras próximas</a>
-                        <a class="tab-item">Últimas clasificaciones</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
+    <nav class="tabs">
+        <a class="tabs-item tabs-item--active">First option</a>
+        <a class="tabs-item">Second option</a>
+        <a class="tabs-item">Third Option</a>
+        <a class="tabs-item">Fourth Option</a>
+    </nav>
+
 </section>
 
 <section class="section">
@@ -1312,6 +1370,18 @@
         </tbody>
 
     </table>
+</section>
+<section class="section">
+    <h2 class="section-title u-mb[2x]">Tooltip</h2>
+    <br class="u-mb[2x]" />
+    <br class="u-mb[2x]" />
+    <div class="u-posr">
+        This is a tooltip
+        <div class="tooltip">
+            Hello tooltip!
+        </div>
+    </div>
+
 </section>
 <section class="section">
     <h2 class="section-title">Type</h2>

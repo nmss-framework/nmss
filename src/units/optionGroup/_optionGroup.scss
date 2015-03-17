@@ -2,17 +2,22 @@
     
     optionGroup
 
-    radio button hack to show radio buttons as a group of options */
+    horizontal one option selector
+    optionally radio button hack to show radio buttons as a group of options */
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
 
-//  $optionGroup-color
-//  $optionGroup-color-hint
-//  $optionGroup-color-hint-lighter
-
-//  $optionGroup-border-width
-//  $optionGroup-border-color
+//    $optionGroup-background
+//    $optionGroup-selected-background
+//    $optionGroup-selected-color
+//    $optionGroup-hover-background
+//
+//    $optionGroup-border-width
+//    $optionGroup-border-color
+//    $optionGroup-border-style
+//
+//    $optionGroup-radio-hack
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
@@ -21,53 +26,52 @@
         display: flex;
         flex-wrap: wrap;
 
-        &-label {
+
+        &-content {
+            display: block;
+            cursor: pointer;
             padding: 0.5rem;
             vertical-align: middle;
             min-height: 3.5rem;
-
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
             user-select: none;
+
+            border: $optionGroup-border-width $optionGroup-border-style $optionGroup-border-color;
+            margin: 0 (-$optionGroup-border-width) (-$optionGroup-border-width) 0;
+            background: $optionGroup-background;
 
             @extend %type-data;
 
             &:hover {
-                background: $optionGroup-color-hint-lighter;
+              background: $optionGroup-hover-background;
             }
         }
 
-        &-radio {
+      &:first-child {
+          margin-left: 0;
+      }
+
+      &--selected .optionGroup-content{
+          background: $optionGroup-selected-background;
+          color:      $optionGroup-selected-color;
+      }
+
+
+
+      @if ($optionGroup-radio-hack) {
+
+          &-radio {
             opacity: 0;
             width: 1px;
             height: 1px;
             display: block;
             position: absolute;
-        }
+          }
 
-        &-option {
-
-            border: $optionGroup-border-width solid $optionGroup-border-color;
-            margin: 0 (-$optionGroup-border-width) (-$optionGroup-border-width) 0;
-            background: $optionGroup-color;
-
-            &:first-child {
-                margin-left: 0;
-            }
-        }
-
-        .optionGroup-label {
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        input[type=radio]:checked + .optionGroup-label{
-            background: $optionGroup-color-hint;
-            color: #FFF;
-        }
-
+          input[type=radio]:checked + .optionGroup-content {
+            background: $optionGroup-selected-background;
+            color:      $optionGroup-selected-color;
+          }
+      }
     }
 
 //_ VARIATIONS _________________________________________________________________________________________________________

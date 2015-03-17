@@ -6,31 +6,41 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-//  property                                    value                                   !default;
+//    $switch-background
+//    $switch-border
+//    $switch-border-radius
+//
+//    $switch-active-background
+//    $switch-active-border
 
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
     .switch {
 
-        border-radius: 1rem;
         padding: 0.1rem;
         border: 0;
         width: 3rem;
-        background: #eee;
         text-align: left;
         outline: none;
-        border:1px solid #DDD;
         box-shadow: inset 0 1px 1px -1px rgba(0,0,0,0.2);
 
+        border-radius: $switch-border-radius;
+        background:    $switch-background;
+        border:        $switch-border;
+
         &--on {
-            background: #99cc66;
             text-align: right;
-            border:1px solid #8EBD5F;
+            background: $switch-active-background;
+            border:     $switch-active-border;
         }
 
         &-handle {
-            border-radius: 1rem;
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: $switch-border-radius;
+            text-align: center;
             padding: 0.2rem;   
             background:#FFF;
             color: #666;

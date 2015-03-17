@@ -6,6 +6,20 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
+    //    $select-font-size
+    //    $select-color
+    //    $select-padding
+    //    $select-border-width
+    //    $select-border-color
+    //    $select-border-style
+    //    $select-border-radius
+    //    $select-height
+    //    $select-background
+    //    $select-focus-outline
+
+    //    $select-disabled-color
+    //    $select-disabled-background
+    //    $select-disabled-border
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
@@ -33,9 +47,9 @@
     }
 
     &[readonly], &[disabled] {
-      color: #CCC;
-      background: #fcfcfc !important;
-      border: 1px solid #eee !important;
+      color:      $select-disabled-color;
+      background: $select-disabled-background;
+      border:     $select-disabled-border;
     }
 }
 

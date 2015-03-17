@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             previewer.contentWindow.document.write(
                 '<!DOCTYPE html>' +
                 '<html><head><title>My dynamic document</title>' +
-                '<link rel="stylesheet" href="css/nmss.css?">' +
+                '<link rel="stylesheet" href="css/sportmaniacs.css?">' +
                 '<link rel="stylesheet" href="css/doc.css">' +
                 '</head>' +
                 '<body class="wrapper-preview"><div class="content-preview">' + sectionCode.value.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, '') +

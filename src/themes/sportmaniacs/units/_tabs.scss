@@ -1,0 +1,15 @@
+//  Tabs
+
+    $tabs-background:                            #EEE;
+    $tabs-box-shadow:                            0 50px 100px 0px #FFF;
+    $tabs-border-bottom:                         1px solid #DDD;
+    $tabs-padding:                               .5rem 0 0 0;
+
+    $tabs-item-padding:                          1rem;
+    $tabs-item-hover-color:                      #000;
+
+    $tabs-item--active-color:                    $color-primary-darker;
+    $tabs-item--active-border-style:             solid;
+    $tabs-item--active-border-width:             2px 1px 0 1px;
+    $tabs-item--active-border-color:             $color-primary #DDD transparent #DDD;
+    $tabs-item--active-background:               #FEFEFE;
