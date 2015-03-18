@@ -1,0 +1,15 @@
+//  Figure - Configuration
+
+    $figure-offset:                             18rem;
+    $figure-transition:                         300ms all;
+
+    $figure-caption-inside-background:          linear-gradient
+            (
+                    5deg,
+                    rgba(0, 0, 0, 0.3) 0%,
+                    rgba(0, 0, 0, 0) 100%
+            );
+
+    $figure-caption-inside-color:               #FFF;
+    $figure-caption-inside-padding:             0.5rem;
+    $figure-image--round-diameter:              6rem;

@@ -4,8 +4,8 @@
         <h3 class="section-description">label</h3>
         <label class="label">Label</label>
         <h3 class="section-description">label-optional</h3>
-        <label class="label">Label <span class="label-optional">Optional</span>
-        </label>
+        <label class="label">Label <span class="label-optional">OPTIONAL</span></label>
+
         <h3 class="section-description">input</h3>
         <input type="text" class="input" placeholder="input">
 
@@ -25,9 +25,25 @@
             <input class="input" type="radio" name="radio">Radio
         </label>
         <h3 class="section-description">form-section</h3>
-        <div class="form-section">
+        <div class="form-section u-mb[2x]">
             <label class="label">Form-section label</label>
             <input type="text" class="input" placeholder="input">
+        </div>
+
+        <div class="gi">
+            <div class="gi-u">
+                <select name="" id="" class="select">
+                    <option value="">one</option>
+                    <option value="">two</option>
+                    <option value="">three</option>
+                </select>
+            </div>
+            <div class="gi-u">
+                <input type="text" placeholder="input" class="input"/>
+            </div>
+            <div class="gi-u">
+                <input type="submit" class="button" value="button"/>
+            </div>
         </div>
     </div>
 </section>

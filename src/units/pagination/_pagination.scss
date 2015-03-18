@@ -6,28 +6,37 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-//  property                                    value                                   !default;
+//  $pagination-background-color
+//  $pagination-background-image
+//  $pagination-border-top
+//  $pagination-color
+
+//  $pagination-page-active-background
+//  $pagination-page-active-color-color
+//  $pagination-page-active-weight
 
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
     .pagination {
 
-        background: rgba(0, 0, 0, 0.03);
         padding: 1rem;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) -60%, transparent 20%);
-        border-top: 1px solid #FFF;
+
+        color: $pagination-color;
+        background-color: $pagination-background-color;
+        background-image: $pagination-background-image;
+        border-top: 1px solid $pagination-border-top-color;
         
         &-page {
 
             display: inline-block;
             padding: 0.5rem 1rem;
-            border-radius: 0;
             height: 2.5rem;
 
             &--active {
-                font-weight: bold;
-                background: rgba(249, 214, 6, 0.5);
+                color: $pagination-page-active-color;
+                font-weight: $pagination-page-active-weight;
+                background: $pagination-page-active-background;
             }
         }
 

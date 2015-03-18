@@ -7,7 +7,14 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-//  #TODO
+//    $form-label-optional-color
+//    $form-label-optional-font-style
+//    $form-label-optional-font-weight
+//    $form-label-optional-margin
+//
+//    $form-section-background
+//    $form-section-border-radius
+//    $form-section-border
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
@@ -29,8 +36,12 @@
             }
 
             .label-optional {
-                font-style: italic;
-                color: #999;
+                display: inline-block;
+
+                color:        $form-label-optional-color;
+                font-weight:  $form-label-optional-font-weight;
+                font-style:   $form-label-optional-font-style;
+                margin:       $form-label-optional-margin;
             }
 
         }
@@ -40,12 +51,15 @@
         }
 
         &-section {
-            background: #f0f0f0;
-            border-radius: 2px;
             padding: 1rem;
-            border: 1px solid #e0e0e0;
+
+            background:     $form-section-background;
+            border-radius:  $form-section-border-radius;
+            border:         $form-section-border;
+
             @extend %cf;
         }
+
     }
 
 //_ VARIATIONS _________________________________________________________________________________________________________
@@ -61,7 +75,6 @@
             }            
         }
     }
-
 
 //  ANGULAR SPECIFIC ___________________________________________________________________________________________________
 

@@ -1,2 +1,5 @@
 node_modules
-nmss.sublime-workspace
+dist/
+doc/css/themes/
+.idea/
+

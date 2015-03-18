@@ -72,6 +72,7 @@ html, body {
 .section-preview {
     flex-grow:5;
     border-left: 1px solid #DDD;
+    height: 100%;
 }
 
 .content-code {
@@ -90,7 +91,7 @@ html, body {
 
 .content-preview {
     background: #f0f0f0;
-    box-shadow: 0 0 1rem 1rem (0,0,0,0.1);
+    box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.1);
     margin: 0 auto;
 }
 

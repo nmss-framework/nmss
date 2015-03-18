@@ -1,4 +1,55 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+document.addEventListener("DOMContentLoaded", function(event) {
+
+    Drag = require('./drag.js');
+    window.drag = new Drag();
+
+    var emmet = require('./vendor/emmet.min.js');
+    var rest = require('rest');
+
+    var pause = false;
+
+    var sectionCode = document.querySelector('#section-code');
+    var previewer = document.querySelector('#section-preview');
+
+    rest('tpl/nmss.tpl').then(function(response) {
+        sectionCode.value = response.entity;
+    });
+
+    emmet.require('textarea').setup({
+        pretty_break: true, // enable formatted line breaks (when inserting
+        // between opening and closing tag)
+        use_tab: true // expand abbreviations by Tab key
+    });
+
+    window.addEventListener("keydown", keyDownTextField, false);
+
+    function keyDownTextField (e) {
+    var keyCode = e.keyCode;
+        if (keyCode === 80) {
+            pause = pause? false : true;
+        }
+    }
+
+
+    setInterval(rePaint, 1000);
+
+    function rePaint(e) {
+        if(!pause) {
+            previewer.contentWindow.document.open();
+            previewer.contentWindow.document.write(
+                '<!DOCTYPE html>' +
+                '<html><head><title>My dynamic document</title>' +
+                '<link rel="stylesheet" href="css/themes/sportmaniacs.css?">' +
+                '<link rel="stylesheet" href="css/doc.css">' +
+                '</head>' +
+                '<body class="wrapper-preview"><div class="content-preview">' + sectionCode.value.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, '') +
+                '</div></body></html>');
+            previewer.contentWindow.document.close();
+        }
+    }
+});
+},{"./drag.js":2,"./vendor/emmet.min.js":4,"rest":7}],2:[function(require,module,exports){
 var elements = require('./elements.js');
 
 module.exports = function(elements) {
@@ -40,42 +91,7 @@ module.exports = function(elements) {
         dragDrop: dragDrop
     };
 };
-
-document.addEventListener("DOMContentLoaded", function(event) {
-
-    var emmet = require('./vendor/emmet.min.js');
-    var rest = require('rest');
-
-    var sectionCode = document.querySelector('#section-code');
-    var previewer = document.querySelector('#section-preview');
-
-    rest('tpl/nmss.tpl').then(function(response) {
-        sectionCode.value = response.entity;
-    });
-
-    emmet.require('textarea').setup({
-        pretty_break: true, // enable formatted line breaks (when inserting
-        // between opening and closing tag)
-        use_tab: true // expand abbreviations by Tab key
-    });
-
-    setInterval(rePaint, 1000);
-
-    function rePaint(e) {
-
-        previewer.contentWindow.document.open();
-        previewer.contentWindow.document.write(
-            '<!DOCTYPE html>' +
-            '<html><head><title>My dynamic document</title>' +
-            '<link rel="stylesheet" href="css/nmss.css?">' +
-            '<link rel="stylesheet" href="css/doc.css">' +
-            '</head>' +
-            '<body class="wrapper-preview"><div class="content-preview">' + sectionCode.value.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, '') +
-            '</div></body></html>');
-        previewer.contentWindow.document.close();
-    }
-});
-},{"./elements.js":2,"./vendor/emmet.min.js":3,"rest":6}],2:[function(require,module,exports){
+},{"./elements.js":3}],3:[function(require,module,exports){
 module.exports = {
     'button': {
         template: '<button class="button">This is a button</button>'
@@ -90,7 +106,7 @@ module.exports = {
         template: '<div class="g-u"></div>'
     }
 };
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 var _=function(){function e(a,b,c){if(a===b)return a!==0||1/a==1/b;if(a==null||b==null)return a===b;if(a._chain)a=a._wrapped;if(b._chain)b=b._wrapped;if(a.isEqual&&k.isFunction(a.isEqual))return a.isEqual(b);if(b.isEqual&&k.isFunction(b.isEqual))return b.isEqual(a);var g=f.call(a);if(g!=f.call(b))return!1;switch(g){case "[object String]":return a==String(b);case "[object Number]":return a!=+a?b!=+b:a==0?1/a==1/b:a==+b;case "[object Date]":case "[object Boolean]":return+a==+b;case "[object RegExp]":return a.source==
 b.source&&a.global==b.global&&a.multiline==b.multiline&&a.ignoreCase==b.ignoreCase}if(typeof a!="object"||typeof b!="object")return!1;for(var d=c.length;d--;)if(c[d]==a)return!0;c.push(a);var d=0,j=!0;if(g=="[object Array]"){if(d=a.length,j=d==b.length)for(;d--;)if(!(j=d in a==d in b&&e(a[d],b[d],c)))break}else{if("constructor"in a!="constructor"in b||a.constructor!=b.constructor)return!1;for(var l in a)if(k.has(a,l)&&(d++,!(j=k.has(b,l)&&e(a[l],b[l],c))))break;if(j){for(l in b)if(k.has(b,l)&&!d--)break;
 j=!d}}c.pop();return j}var d=this,h=d._,i={},b=Array.prototype,c=Object.prototype,a=b.slice,g=b.unshift,f=c.toString,j=c.hasOwnProperty,l=b.forEach,n=b.map,m=b.reduce,o=b.reduceRight,p=b.filter,r=b.every,q=b.some,u=b.indexOf,s=b.lastIndexOf,c=Array.isArray,v=Object.keys,w=Function.prototype.bind,k=function(a){return new x(a)};if(typeof exports!=="undefined"){if(typeof module!=="undefined"&&module.exports)exports=module.exports=k;exports._=k}else d._=k;k.VERSION="1.3.3";var t=k.each=k.forEach=function(a,
@@ -427,7 +443,7 @@ if(b&&b.nodeType==1&&b.nodeName=="TEXTAREA"){if(~b.className.indexOf("no-emmet")
 "Alt+Down":"decrement_number_by_01","Ctrl+Alt+Up":"increment_number_by_10","Ctrl+Alt+Down":"decrement_number_by_10","Meta+.":"select_next_item","Meta+,":"select_previous_item","Meta+Shift+B":"reflect_css_value",Enter:"insert_formatted_line_break"},a={syntax:"html",use_tab:!1,pretty_break:!1},g={},f={},j=document;j.addEventListener?j.addEventListener("keydown",b,!1):j.attachEvent?ele.attachEvent("onkeydown",b):j.onkeydown=func;f=d.extend({},a,{});typeof emmetKeymap!="undefined"&&(c=emmetKeymap);d.each(c,
 function(a,b){i(b,a)});return{setOptions:function(b){f=d.extend({},a,b||{})},getOption:h,addShortcut:i,unbindShortcut:function(a){a=a.toLowerCase();a in g&&delete g[a]},getShortcuts:function(){var a=e("shortcut"),b=e("actions");return d.compact(d.map(g,function(c,e){var f=e.toLowerCase();return f=="tab"||f=="enter"?void 0:{keystroke:a.format(e),compiled:c.compiled,label:d.last((b.get(c.action).options.label||c.action).split("/")),action:c.action}}))},getInfo:function(){var a="This textareas on this page are powered by Emmet toolkit.\n\nAvailable shortcuts:\n",
 b=d.map(this.getShortcuts(),function(a){return a.keystroke+" \u2014 "+a.label});a+=b.join("\n")+"\n\n";a+="More info on http://emmet.io/";return a},showInfo:function(){alert(this.getInfo())},setup:function(a){this.setOptions(a)}}});
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -464,6 +480,7 @@ process.browser = true;
 process.env = {};
 process.argv = [];
 process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
 
 function noop() {}
 
@@ -486,7 +503,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /*
  * Copyright 2012-2013 the original author or authors
  * @license MIT, see LICENSE.txt for details
@@ -717,7 +734,7 @@ process.umask = function() { return 0; };
 	// Boilerplate for AMD and Node
 ));
 
-},{"./util/mixin":10}],6:[function(require,module,exports){
+},{"./util/mixin":11}],7:[function(require,module,exports){
 /*
  * Copyright 2014 the original author or authors
  * @license MIT, see LICENSE.txt for details
@@ -744,7 +761,7 @@ process.umask = function() { return 0; };
 	// Boilerplate for AMD and Node
 ));
 
-},{"./client/default":8,"./client/xhr":9}],7:[function(require,module,exports){
+},{"./client/default":9,"./client/xhr":10}],8:[function(require,module,exports){
 /*
  * Copyright 2014 the original author or authors
  * @license MIT, see LICENSE.txt for details
@@ -810,7 +827,7 @@ process.umask = function() { return 0; };
 	// Boilerplate for AMD and Node
 ));
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 /*
  * Copyright 2014 the original author or authors
  * @license MIT, see LICENSE.txt for details
@@ -936,7 +953,7 @@ process.umask = function() { return 0; };
 	// Boilerplate for AMD and Node
 ));
 
-},{"../client":7}],9:[function(require,module,exports){
+},{"../client":8}],10:[function(require,module,exports){
 /*
  * Copyright 2012-2014 the original author or authors
  * @license MIT, see LICENSE.txt for details
@@ -1112,7 +1129,7 @@ process.umask = function() { return 0; };
 	// Boilerplate for AMD and Node
 ));
 
-},{"../UrlBuilder":5,"../client":7,"../util/normalizeHeaderName":11,"../util/responsePromise":12,"when":30}],10:[function(require,module,exports){
+},{"../UrlBuilder":6,"../client":8,"../util/normalizeHeaderName":12,"../util/responsePromise":13,"when":31}],11:[function(require,module,exports){
 /*
  * Copyright 2012-2013 the original author or authors
  * @license MIT, see LICENSE.txt for details
@@ -1162,7 +1179,7 @@ process.umask = function() { return 0; };
 	// Boilerplate for AMD and Node
 ));
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 /*
  * Copyright 2012 the original author or authors
  * @license MIT, see LICENSE.txt for details
@@ -1202,7 +1219,7 @@ process.umask = function() { return 0; };
 	// Boilerplate for AMD and Node
 ));
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 /*
  * Copyright 2014-2015 the original author or authors
  * @license MIT, see LICENSE.txt for details
@@ -1344,7 +1361,7 @@ process.umask = function() { return 0; };
 	// Boilerplate for AMD and Node
 ));
 
-},{"./normalizeHeaderName":11,"when":30}],13:[function(require,module,exports){
+},{"./normalizeHeaderName":12,"when":31}],14:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -1363,7 +1380,7 @@ define(function (require) {
 });
 })(typeof define === 'function' && define.amd ? define : function (factory) { module.exports = factory(require); });
 
-},{"./Scheduler":14,"./env":26,"./makePromise":28}],14:[function(require,module,exports){
+},{"./Scheduler":15,"./env":27,"./makePromise":29}],15:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -1445,7 +1462,7 @@ define(function() {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -1473,7 +1490,7 @@ define(function() {
 	return TimeoutError;
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -1530,7 +1547,7 @@ define(function() {
 
 
 
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -1821,7 +1838,7 @@ define(function(require) {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(require); }));
 
-},{"../apply":16,"../state":29}],18:[function(require,module,exports){
+},{"../apply":17,"../state":30}],19:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -1983,7 +2000,7 @@ define(function() {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -2012,7 +2029,7 @@ define(function() {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
-},{}],20:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -2034,7 +2051,7 @@ define(function(require) {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(require); }));
 
-},{"../state":29}],21:[function(require,module,exports){
+},{"../state":30}],22:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -2101,7 +2118,7 @@ define(function() {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -2127,7 +2144,7 @@ define(function() {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
-},{}],23:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -2207,7 +2224,7 @@ define(function(require) {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(require); }));
 
-},{"../TimeoutError":15,"../env":26}],24:[function(require,module,exports){
+},{"../TimeoutError":16,"../env":27}],25:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -2295,7 +2312,7 @@ define(function(require) {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(require); }));
 
-},{"../env":26,"../format":27}],25:[function(require,module,exports){
+},{"../env":27,"../format":28}],26:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -2335,7 +2352,7 @@ define(function() {
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 (function (process){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
@@ -2412,7 +2429,7 @@ define(function(require) {
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(require); }));
 
 }).call(this,require('_process'))
-},{"_process":4}],27:[function(require,module,exports){
+},{"_process":5}],28:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -2470,7 +2487,7 @@ define(function() {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 (function (process){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
@@ -3401,7 +3418,7 @@ define(function() {
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
 }).call(this,require('_process'))
-},{"_process":4}],29:[function(require,module,exports){
+},{"_process":5}],30:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 /** @author Brian Cavalier */
 /** @author John Hann */
@@ -3438,7 +3455,7 @@ define(function() {
 });
 }(typeof define === 'function' && define.amd ? define : function(factory) { module.exports = factory(); }));
 
-},{}],30:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 /** @license MIT License (c) copyright 2010-2014 original author or authors */
 
 /**
@@ -3669,4 +3686,4 @@ define(function (require) {
 });
 })(typeof define === 'function' && define.amd ? define : function (factory) { module.exports = factory(require); });
 
-},{"./lib/Promise":13,"./lib/TimeoutError":15,"./lib/apply":16,"./lib/decorators/array":17,"./lib/decorators/flow":18,"./lib/decorators/fold":19,"./lib/decorators/inspect":20,"./lib/decorators/iterate":21,"./lib/decorators/progress":22,"./lib/decorators/timed":23,"./lib/decorators/unhandledRejection":24,"./lib/decorators/with":25}]},{},[1]);
+},{"./lib/Promise":14,"./lib/TimeoutError":16,"./lib/apply":17,"./lib/decorators/array":18,"./lib/decorators/flow":19,"./lib/decorators/fold":20,"./lib/decorators/inspect":21,"./lib/decorators/iterate":22,"./lib/decorators/progress":23,"./lib/decorators/timed":24,"./lib/decorators/unhandledRejection":25,"./lib/decorators/with":26}]},{},[1]);

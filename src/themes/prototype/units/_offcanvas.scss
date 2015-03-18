@@ -1,0 +1,22 @@
+//  Offcanvas
+
+    $offcanvas-offset:                          18rem;
+    $offcanvas-transition:                      300ms all;
+
+    $offcanvas-menu-background-color:           $color-primary;
+
+    $offcanvas-menu-item-color:                 #36273a;
+    $offcanvas-menu-item-text-decoration:       none;
+    $offcanvas-menu-item-padding:               1rem;
+    $offcanvas-menu-item-box-shadow:            0 1px 0 0 rgba(0, 0, 0, 0.1);
+
+    $offcanvas-content-padding:                 0rem;
+    $offcanvas-content-background-color:        $body-background-color;
+    $offcanvas-content-box-shadow:              0 0 5px 0 rgba(0,0,0,0.4);
+
+    $offcanvas-topbar-background-color:         transparent;
+    $offcanvas-topbar-color:                    #FFF;
+    $offcanvas-topbar-border-radius:            0;
+    $offcanvas-topbar-min-height:               0;
+    $offcanvas-topbar-padding:                  0.5rem;
+    $offcanvas-topbar-fullwidth:                false;

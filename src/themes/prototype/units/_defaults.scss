@@ -1,0 +1,23 @@
+//  Defaults
+
+    $body-background-color:                     #f5f5f5;
+
+    $color-primary:                             #CCC;
+    $color-primary-dark:                        #999;
+    $color-primary-darker:                      #666;
+    $color-primary-light:                       #DDD;
+    $color-primary-lighter:                     #EEE;
+    $color-primary-contrast:                    #262b38;
+
+    $color-secondary:                           #854785;
+
+    $color-success:                             #2ecc71;
+    $color-warning:                             #f1c40f;
+    $color-error:                               #e74c3c;
+
+    $color-hint:                                #34495e ;
+    $color-hint-light:                          lighten($color-hint, 10);
+    $color-hint-lighter:                        lighten($color-hint, 20);
+
+    $color-thin-shadow:                         rgba(0,0,0,0.1);
+    $border-radius:                             2px;

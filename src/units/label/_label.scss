@@ -1,20 +1,21 @@
 /*_ UNITS ______________________________________________________________________________________________________________
-    
+
     Label
 
     Common label patterns */
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $label-padding:                             0                                       !default;
-    $label-border-width:                        0                                       !default;
-    $label-border-color:                        0                                       !default;
-    $label-border-style:                        none                                    !default;
+    // $label-padding
+    // $label-border-width
+    // $label-border-color
+    // $label-border-style
+
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
 .label {
-
+    display: inline-block;
     border: 0;
     padding: $label-padding;
     border-width: $label-border-width;
@@ -23,5 +24,4 @@
     position: relative;
     @extend %type-ui;
 }
-
 //_ VARIATIONS _________________________________________________________________________________________________________

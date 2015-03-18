@@ -13,22 +13,18 @@
     overrides.
 
 
+___ THEMES _____________________________________________________________________________________________________________
+
+    prototype           base theme of the framework, change as you wish
+
 ___ DEFAULTS ___________________________________________________________________________________________________________
 
     normalize           Render all elements more consistently
                         and in line with modern standards
 
-    defaults            Overrides of normalize
-
-___ THEMES _____________________________________________________________________________________________________________
-
-    prototype           base theme of the framework, change as you wish
-
-___ TYPE _______________________________________________________________________________________________________________
-
-    type                Typographic system with common type hierarchy
-
 ___ UTILS ______________________________________________________________________________________________________________
+
+    defaults            Overrides of normalize
 
     utils               Common layout utilities following emmet sintax
 
@@ -37,6 +33,12 @@ ___ UTILS ______________________________________________________________________
     loader              Multipurpose spinning loader
 
     proportions         Proportional width system
+
+
+___ TYPE _______________________________________________________________________________________________________________
+
+    type                Typographic system with common type hierarchy
+
 
 ___ UNITS ______________________________________________________________________________________________________________
 
@@ -75,18 +77,18 @@ ___ UNITS ______________________________________________________________________
 
 */
 
-//_ DEFAULTS ___________________________________________________________________________________________________________
-
-@import "vendor/normalize",
-        "defaults";
-
 //_ THEMES _____________________________________________________________________________________________________________
 
-@import "themes/prototype";
+//@import  "themes/prototype/index";
+
+//_ DEFAULTS ___________________________________________________________________________________________________________
+
+@import "vendor/_normalize";
 
 //_ UTILS ______________________________________________________________________________________________________________
 
-@import "utils/utils",
+@import "utils/defaults",
+        "utils/utils",
         "utils/clearfix",
         "utils/loader",
         "utils/proportions";
@@ -98,7 +100,7 @@ ___ UNITS ______________________________________________________________________
         "units/form/form",
         "units/input/input",
         "units/nav/nav",
-        "units/tab/tab",
+        "units/tabs/tabs",
         "units/steps/steps",
         "units/grid/grid",
         "units/icon/icon",
@@ -114,4 +116,5 @@ ___ UNITS ______________________________________________________________________
         "units/tooltip/tooltip",
         "units/anchor/anchor",
         "units/switch/switch",
+        "units/modal/modal",
         "units/optionGroup/optionGroup";
