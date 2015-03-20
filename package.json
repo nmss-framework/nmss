@@ -1,6 +1,6 @@
 {
   "name": "nmss",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "nmss css framework",
   "main": "index.js",
   "scripts": {
