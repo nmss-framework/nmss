@@ -1,0 +1,44 @@
+/*_ THEMES _____________________________________________________________________________________________________________
+
+    Prototype
+
+    base theme of the framework, change as you wish */
+
+
+//_ MIXINS  ______________________________________________________________________________________________________
+
+// Strip units (removes rem, px, ...)
+
+  @function strip-unit($num) {
+      @return $num / ($num * 0 + 1);
+  }
+
+//_ THEME FILES ______________________________________________________________________________________________________
+
+@import "units/defaults",
+        "units/type",
+        "units/alert",
+        "units/anchor",
+        "units/badges",
+        "units/button",
+        "units/card",
+        "units/figure",
+        "units/form",
+        "units/input",
+        "units/label",
+        "units/offcanvas",
+        "units/optionGroup",
+        "units/pagination",
+        "units/select",
+        "units/switch",
+        "units/tabs",
+        "units/tooltip";
+
+//  Global rewrites
+
+    body {
+        background-color: $body-background-color;
+        padding-bottom: 6rem;
+    }
+
+    @import "../../nmss";

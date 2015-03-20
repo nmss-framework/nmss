@@ -14,6 +14,7 @@
 //  $button-hover-background
 //  $button-color
 //  $button-font-weight
+//  $button-transition
 
 //  $button--flat-border-style
 //  $button--flat-border-width
@@ -40,8 +41,8 @@
         color: $button-color;
         font-weight: $button-font-weight;
         text-transform: $button-text-transform;
+        transition: $button-transition;
 
-        // transition: all 300ms ease-out;
         // height: 2.5rem;
         // font-size: 0.9rem;
         // box-shadow: 0 1px 0px $button-background;

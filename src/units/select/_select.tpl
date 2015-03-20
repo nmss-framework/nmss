@@ -11,6 +11,13 @@
     </select>
 
 
-
+    <h3 class="section-description">select[disabled][readonly]</h3>
+    <select class="select" name="" id="" disabled>
+        <option value="">option 1</option>
+        <option value="">option 2</option>
+        <option value="">option 3</option>
+        <option value="">option 4</option>
+        <option value="">option 5</option>
+    </select>
 
 </section>

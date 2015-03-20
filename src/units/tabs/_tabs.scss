@@ -1,0 +1,67 @@
+/*_ MODULE _____________________________________________________________________________________________________________
+    
+    Tab
+
+    Tabbed navigation handling */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+//    $tabs-background
+//    $tabs-box-shadow
+//    $tabs-border-bottom
+//    $tabs-padding
+//
+//    $tabs-item-padding
+//    $tabs-item-hover-color
+//
+//    $tabs-item--active-color
+//    $tabs-item--active-border-style
+//    $tabs-item--active-border-width
+//    $tabs-item--active-border-color
+//    $tabs-item--active-background
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .tabs {
+        display: flex;
+
+        padding:        $tabs-padding;
+        background:     $tabs-background;
+        box-shadow:     $tabs-box-shadow;
+        border-bottom:  $tabs-border-bottom;
+
+
+        &-item {
+            flex-grow: 1;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            top: 1px;
+            border: 1px solid transparent;
+            border-bottom: 0;
+
+            padding: $tabs-item-padding;
+
+            transition: all 100ms ease-in;
+
+            @extend %type-ui;
+
+            &:hover{
+                color: $tabs-item-hover-color;
+            }
+
+            &--active {
+                border-style: solid;
+                border-color: $tabs-item--active-border-color;
+                border-width: $tabs-item--active-border-width;
+
+                background:   $tabs-item--active-background;
+                color: $color-primary-darker;
+            }
+        }
+    }
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
+/*  Variations descriptions */
+

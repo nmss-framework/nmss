@@ -1,0 +1,29 @@
+//  Type
+
+    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+    @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+    @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+    $type-family-primary:                       "Source Sans Pro";
+    $type-family-secondary:                     "Roboto Slab";
+    $type-display2-size:                        2.8rem;
+    $type-display1-size:                        1.999rem;
+    $type-title-size:                           1rem;
+    $type-subtitle-size:                        1rem;
+    $type-body-size:                            1rem;
+    $type-ui-size:                              0.9rem;
+    $type-data-size:                            0.9rem;
+
+    $type-headline-size:                        1.3rem;
+    $type-subheadline-size:                     1rem;
+
+    $type-paragraph-lineheight:                 1.414rem;
+
+    $type-color-primary:                        #232323;
+    $type-color-secondary:                      #767676;
+    $type-color-thirdary:                       #999;
+    $type-color-inverse:                        #f0f0f0;
+
+    $type-highlight-color:                      $color-primary;
+
+    $type-data-color:                           $type-color-secondary;

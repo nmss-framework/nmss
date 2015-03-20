@@ -1,0 +1,19 @@
+//  Button
+
+$button-border:                             0;
+$button-padding:                            1rem 1rem;
+$button-border-radius:                      0;
+$button-text-transform:                     uppercase;
+$button-background:                         no-repeat center center $color-primary;
+$button-hover-background:                   $color-primary-light;
+$button-color:                              $color-primary-darker;
+$button-font-weight:                        bold;
+$button-transition:                         all 300ms ease-out;
+
+
+$button--flat-border-style:                 solid;
+$button--flat-border-width:                 1px;
+$button--flat-border-color:                 $color-primary-dark;
+$button--flat-background:                   transparent;
+$button--flat-color:                        $color-primary-darker;
+$button--flat-padding:                      0.6rem 1rem;

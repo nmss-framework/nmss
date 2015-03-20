@@ -57,11 +57,10 @@
     }
 
     &[readonly], &[disabled] {
-        color: #CCC;
-        background: #fcfcfc !important;
-        border: 1px solid #eee !important;
+        color:      $input-disabled-color;
+        background: $input-disabled-background;
+        border:     $input-disabled-border;
     }
-
 }
 
 //_ VARIATIONS _________________________________________________________________________________________________________

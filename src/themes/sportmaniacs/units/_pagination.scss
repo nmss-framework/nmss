@@ -1,0 +1,10 @@
+// Pagination
+
+    $pagination-background-color:               rgba(0, 0, 0, 0.03);
+    $pagination-background-image:               linear-gradient(to bottom, rgba(0, 0, 0, 0.1) -60%, transparent 20%);
+    $pagination-border-top-color:               #FFF;
+    $pagination-color:                          inherit;
+
+    $pagination-page-active-background:         rgba($color-primary, 0.5);
+    $pagination-page-active-color:              inherit;
+    $pagination-page-active-weight:             bold;
