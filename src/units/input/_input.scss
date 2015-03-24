@@ -24,7 +24,8 @@
     &[type="email"],
     &[type="date"],
     &[type="password"],
-    &[type="phone"]
+    &[type="tel"],
+    &[type="url"]
      {
         color:          $input-text-color;
         font-size:      $input-text-font-size;
