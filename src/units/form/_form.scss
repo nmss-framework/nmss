@@ -89,10 +89,6 @@
         &[type="password"],
         &[type="phone"]
          {
-            // background: url("../img/icon_invalid.svg") 99% center no-repeat;
-            // background-size: 2rem 2rem;
-            // background-color: #FEE;
-            // border: 1px solid rgba(253, 224, 129, 0.5);
             border-bottom:2px solid $color-error;
         }
     }

@@ -34,27 +34,20 @@
         cursor: pointer;
         line-height: 1rem;
 
-        padding: $button-padding;
-        border: $button-border;
-        border-radius: $button-border-radius;
-        background: $button-background;
-        color: $button-color;
-        font-weight: $button-font-weight;
+        padding:        $button-padding;
+        border:         $button-border;
+        border-radius:  $button-border-radius;
+        background:     $button-background;
+        color:          $button-color;
+        font-weight:    $button-font-weight;
         text-transform: $button-text-transform;
-        transition: $button-transition;
-
-        // height: 2.5rem;
-        // font-size: 0.9rem;
-        // box-shadow: 0 1px 0px $button-background;
-        // border: 1px solid rgba(0, 0, 0, 0.05);
-        // background-size: auto, 10%;
+        transition:     $button-transition;
 
         &:hover {
             background: no-repeat center center $button-hover-background;
             background-size: auto, 10%;
             box-shadow: 0 1px 0px $button-background;
         }
-
     }
 
 //_ VARIATIONS _________________________________________________________________________________________________________
@@ -105,37 +98,4 @@
                 box-shadow: 0 1px 0px #f0f0f0;
             }
         }
-    }
-
-//_ ANGULAR ONLY _______________________________________________________________________________________________________
-
-    .button.async-sending {
-        color: transparent;
-        background: url("../img/loader_white.svg") no-repeat center center $color-warning;
-        background-size: auto, 10%;
-        pointer-events: none;
-    }
-
-    .button.async-success {
-        color: transparent;
-        background: url("../img/success.svg") no-repeat center center $color-success;
-        background-size: auto, 10%;
-        pointer-events: none;
-        transition: all 0;
-    }
-
-    .button.async-error {
-        color: #FFF;
-        background:no-repeat center center $color-error;
-        background-size: auto, 10%;
-        pointer-events: none;
-        @extend .shake;
-    }
-
-    .button.async-block {
-        color: transparent;
-        background: url("../img/loader.svg") no-repeat center center #DDD;
-        background-size: auto, 10%;
-        pointer-events: none;
-        transition: all 0;
     }
