@@ -11,11 +11,11 @@ You have to create your own build to use nmss framework. First you need a theme 
 
 Relax, let's explain step by step:
 
-1. Clone or npm install nmss framework
+### 1. Clone or npm install nmss framework
 
 git
 ```
-git clone https://github.com/rlucha/nmss.git
+git clone https://github.com/nmss-framework/nmss.git
 ```
 
 npm
@@ -23,21 +23,23 @@ npm
 npm install nmss
 ```
 
-2. Clone, nmp install or create your own theme
+### 2. Clone, nmp install or create your own theme
 git
 ```
-git clone https://github.com/rlucha/nmss.git
+git clone https://github.com/nmss-framework/nmss-theme-prototype.git
 ```
 
 npm
 ```
-npm install nmss
+npm install nmss-theme-prototype
 ```
 
-Create your own theme 
+
 TODO
+Create your own theme 
 
-3. Load nmss core and theme in your sass project.
+
+### 3. Load nmss core and theme in your sass project.
 
 You have to add nmss core and one nmss theme in your `includePaths` so that you can import them in your project.
 
@@ -53,17 +55,19 @@ Gulp build using `gulp-sass`
 
 ```javascript
 gulp.task('sass', function () {
-    gulp.src('src/scss/app.scss')
-      .pipe(sass({
-        includePaths: [
-            //'node_modules/nmss-theme-sportmaniacs',
-            //'node_modules/nmss/src',
-            '../nmss/src',
-            '../nmss-theme-prototype'
-        ]
-      }))
-      .pipe(gulp.dest('dist/css'))
+  gulp.src('src/scss/app.scss')
+  .pipe(sass({
+        outputStyle: 'compressed',
+        errLogToConsole: true,
+    includePaths: [
+      'node_modules/nmss-theme-prototype/theme',
+      'node_modules/nmss/src',
+    ]
+  }))
+  .pipe(autoprefixer('last 2 version'))
+  .pipe(gulp.dest('dist/css'));
 });
+
 ```
 
 Grunt build using `grunt-contrib-sass`
@@ -73,10 +77,8 @@ sass: {
   dist: {
     options: {
         loadPath: [
-            //'node_modules/nmss-theme-sportmaniacs',
-            //'node_modules/nmss/src',
-            '../nmss/src',
-            '../nmss-theme-prototype'
+            'node_modules/nmss-theme-prototype/theme',
+            'node_modules/nmss/src'
         ]
     },
     files: {
