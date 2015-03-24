@@ -41,11 +41,12 @@ Create your own theme
 
 ### 3. Load nmss core and theme in your sass project.
 
-You have to add nmss core and one nmss theme in your `includePaths` so that you can import them in your project.
+You can add nmss core and one nmss theme in your `includePaths` so that you can import them in your project.
 
-app.scss
 
-```
+```javascript
+// app.scss
+
 @import "nmss-theme-prototype";
 @import "nmss";
 ```
@@ -54,6 +55,8 @@ app.scss
 Gulp build using `gulp-sass`
 
 ```javascript
+// gulpfile.js
+
 gulp.task('sass', function () {
   gulp.src('src/scss/app.scss')
   .pipe(sass({
@@ -73,6 +76,8 @@ gulp.task('sass', function () {
 Grunt build using `grunt-contrib-sass`
 
 ```javascript
+// Gruntfile.js
+
 sass: {
   dist: {
     options: {
@@ -88,3 +93,18 @@ sass: {
 }
 ```
 
+
+But, If you prefer you can directly import the files in your main app scss file, as this:
+
+```javascript
+// app.scss
+
+// load nmss theme
+@import "../../node_modules/nmss-theme-prototype/theme/nmss-theme-prototype";
+// load nmss framework
+@import "../../node_modules/nmss/src/nmss";
+
+// your scss
+// ...
+
+```
