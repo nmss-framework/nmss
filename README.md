@@ -1,8 +1,6 @@
 # nmss
 nmss is yet another css framework to develop responsive apps, currently being developing as the base framework to feed all the fronts in Sportmaniacs.com
 
-
-
 Pre-Alpha.
 
 ## Requirements
@@ -87,3 +85,4 @@ sass: {
   }
 }
 ```
+

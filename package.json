@@ -4,7 +4,7 @@
   "description": "nmss css framework",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rlucha/nmss.git"
+    "url": "https://github.com/nmss-framework/nmss.git"
   },
   "keywords": [
     "css",
@@ -13,7 +13,7 @@
   "author": "Roberto Lucha <rlucha@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rlucha/nmss/issues"
+    "url": "https://github.com/nmss-framework/nmss/issues"
   },
-  "homepage": "https://github.com/rlucha/nmss"
+  "homepage": "https://github.com/nmss-framework/nmss"
 }
