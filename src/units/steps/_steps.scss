@@ -13,9 +13,7 @@
 
     .steps {
 
-        display: table;
-        width: 100%;
-        table-layout: fixed;
+        display: flex;
         background: #fff;
         min-height: 5rem;
         border-radius: 2px;
@@ -23,17 +21,16 @@
         overflow: hidden;
         counter-reset: steps;
 
+
       &-item {
-            display: table-cell;
-            text-align: center;
-            color:#AAA;
-            vertical-align: middle;
-          
-            &::before {
-              counter-increment: steps;
-              content: counter(steps) ".";
-              margin-right: 5px;
-            }
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color:#AAA;
+        vertical-align: middle;
 
             &:hover {
                 background: $color-hint-light;
