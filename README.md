@@ -56,6 +56,7 @@ Gulp build using `gulp-sass`
 
 ```javascript
 // gulpfile.js
+var gulp = require('gulp');
 
 gulp.task('sass', function () {
   gulp.src('src/scss/app.scss')
