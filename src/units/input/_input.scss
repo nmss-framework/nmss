@@ -20,12 +20,19 @@
     }
 
     &[type="text"],
-    &[type="search"],
-    &[type="email"],
-    &[type="date"],
     &[type="password"],
+    &[type="date"],
+    &[type="datetime"],
+    &[type="datetime-local"],
+    &[type="month"],
+    &[type="week"],
+    &[type="email"],
+    &[type="number"],
+    &[type="search"],
     &[type="tel"],
-    &[type="url"]
+    &[type="time"],
+    &[type="url"],
+    &[type="color"]
      {
         color:          $input-text-color;
         font-size:      $input-text-font-size;
