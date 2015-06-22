@@ -4,8 +4,11 @@
     <h3 class="section-description">input</h3>
     <input type="text" class="input" placeholder="input">
 
-    <h3 class="section-description">input [disabled] [readonly]</h3>
-    <input type="text" class="input" disabled placeholder="input">
+    <h3 class="section-description">input [disabled]</h3>
+    <input type="text" class="input" disabled placeholder="input [disabled]">
+
+    <h3 class="section-description">input [readonly]</h3>
+    <input type="text" class="input" readonly placeholder="input [readonly]">    
 
     <h3 class="section-description">input [type=checkbox]</h3>
     <label class="label label--checkbox" for="checkbox">

@@ -64,11 +64,14 @@
         margin-right: 0.5rem;
     }
 
-    &[readonly], &[disabled] {
+    &[disabled] {
         color:      $input-disabled-color;
         background: $input-disabled-background;
         border:     $input-disabled-border;
     }
+    &[readonly] {
+        cursor: pointer;
+    }    
 }
 
 //_ VARIATIONS _________________________________________________________________________________________________________
