@@ -1,0 +1,47 @@
+/*_ UNITS ______________________________________________________________________________________________________________
+    
+    DL
+
+    Definition lists */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+    $dl-margin:                         0                       !default;
+
+    $dt-color:                          #262B38                 !default;    
+    $dt-font-weight:                    600                     !default;
+    $dt-font-size:                      0.875rem                !default;
+    $dt-margin:                         0 0 .2rem 0             !default;
+
+    $dd-color:                          #888                    !default;
+    $dd-font-size:                      1rem                    !default;
+    $dd-font-weight:                    normal                  !default;
+    $dd-margin:                         0 .6rem 1rem 0          !default;
+
+//_ DEFINITION _________________________________________________________________________________________________________
+
+    .dl {
+        display: block;
+        margin: $dl-margin;
+    }
+
+    .dl-dt {
+        color: $dt-color;
+        font-weight: $dt-font-weight;
+        font-size: $dt-font-size;
+        display: block;
+        text-transform: uppercase;
+        margin: $dt-margin;
+    }
+
+    .dl-dd {
+        color: $dd-color;
+        font-weight: $dd-font-weight;
+        font-size: $dd-font-size;        
+        display: block;
+        margin: $dd-margin;
+    }
+
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
