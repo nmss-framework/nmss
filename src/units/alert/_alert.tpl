@@ -23,7 +23,7 @@
 		<span class="alert-message">This is a bad message</span>
 	</div>
 
-    <h3 class="section-description">alert--info</h3>    
+    <h3 class="section-description">alert--info</h3>
 
 	<div class="alert alert--info">
 		<span class="alert-icon"><i class="fa fa-info"></i></span>

@@ -1,0 +1,47 @@
+/*_ MODULES ____________________________________________________________________________________________________________
+    
+    progress
+
+    Progress bar */
+
+//_ CONFIGURATION ______________________________________________________________________________________________________
+
+    $progress-border: 1px solid rgba(0,0,0,0.1);
+    $progress-height: 2.5rem;
+    $progress-color: #5fabf1;
+    $progress-background: #fff;
+
+//_ DEFINITION _________________________________________________________________________________________________________
+  
+    .progress {
+        
+        background: $progress-background;
+        border: $progress-border;
+        padding: 1px;
+        height: $progress-height;
+        display: block;
+        width: 100%;
+
+        // IE10
+        color: $progress-color;
+
+        // Webkit
+        &::-webkit-progress-bar {
+            background: $progress-background;
+        }
+        &::-webkit-progress-value {            
+            background: $progress-color;
+        }
+
+        // Firefox
+        &::-moz-progress-bar {
+            background: $progress-color;
+        }          
+    }
+
+
+  
+
+
+//_ VARIATIONS _________________________________________________________________________________________________________
+
