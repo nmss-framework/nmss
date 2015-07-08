@@ -8,30 +8,40 @@
 
 //_ CONFIGURATION ______________________________________________________________
 
-//  $alert-padding
-//  $alert-border
-//  $alert-color
-
 //_ DEFINITION _________________________________________________________________
 
     .alert {
-        display: block;
-        padding: $alert-padding;
-        border: $alert-border;
+        display: table;
+        background: #FFF;
+        width: 100%;
+        box-shadow: $alert-shadow;
 
-        &--success {
-            color: $alert--success-color;
-            background: $color--success-background;
+        &-icon {
+            display: table-cell;
+            width: 3.5rem;
+            vertical-align: middle;
+            padding: $alert-padding;
+            text-align: center;
+            color: #FFF;
+        }
+        &-message {
+            display: table-cell;
+            vertical-align: middle;
+            padding: $alert-padding;
+            color: $alert-color;
         }
 
-        &--warning {
-            color: $alert--warning-color;
-            background: $color--warning-background;
+        &--success &-icon {        
+            background: $alert--success-background;
         }
-
-        &--error {
-            color: $alert--error-color;
-            background: $color--error-background;
+        &--warning &-icon {            
+            background: $alert--warning-background;
+        }
+        &--error &-icon {
+            background: $alert--error-background;
+        }
+        &--info &-icon {
+            background: $alert--info-background;
         }
     }
 
