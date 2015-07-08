@@ -2,11 +2,21 @@
 
     alert
 
-    inline notification
+    icon notification, easy to combine with icon fonts
 
 */
 
 //_ CONFIGURATION ______________________________________________________________
+
+    $alert-padding:                      1rem                          !default;
+    $alert-border:                       1px solid $color-thin-shadow  !default;
+    $alert-shadow:                       0 1px 1px 0px rgba(0,0,0,0.1) !default;
+    $alert-color:                        $type-color-primary           !default;
+
+    $alert--success-background:          $color-success                !default;
+    $alert--warning-background:          $color-warning                !default;  
+    $alert--error-background:            $color-error                  !default;
+    $alert--info-background:             $color-info                   !default;
 
 //_ DEFINITION _________________________________________________________________
 

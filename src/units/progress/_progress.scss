@@ -6,15 +6,14 @@
 
 //_ CONFIGURATION ______________________________________________________________________________________________________
 
-    $progress-border: 1px solid rgba(0,0,0,0.1);
-    $progress-height: 2.5rem;
-    $progress-color: #5fabf1;
-    $progress-background: #fff;
+    $progress-border:                                   1px solid rgba(0,0,0,0.1)                   !default;
+    $progress-height:                                   2.5rem                                      !default;
+    $progress-color:                                    #5fabf1                                     !default;
+    $progress-background:                               #fff                                        !default;
 
 //_ DEFINITION _________________________________________________________________________________________________________
   
-    .progress {
-        
+    .progress {        
         background: $progress-background;
         border: $progress-border;
         padding: 1px;
