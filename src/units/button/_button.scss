@@ -16,12 +16,17 @@
 //  $button-font-weight
 //  $button-transition
 
-//  $button--flat-border-style
-//  $button--flat-border-width
-//  $button--flat-border-color
+//  $button--flat-border
 //  $button--flat-background
 //  $button--flat-color
-//  $button--flat-padding
+
+//  $button--info-border
+//  $button--info-background
+//  $button--info-color
+
+//  $button--danger-border
+//  $button--danger-background
+//  $button--danger-color
 
 //_ DEFINITION _________________________________________________________________________________________________________
 
@@ -56,7 +61,9 @@
 /*  button--full:       Fills all the available space
     button--round:      Circular button as in Material Design
     button--flat:       Non beveled button, used mainly as secondary button
-    button--inline:     Button as inline text, similar to <a> */
+    button--inline:     Button as inline text, similar to <a> 
+    button--alert
+    */
 
     .button {
 
@@ -68,11 +75,9 @@
 
         &--flat {
             background: $button--flat-background;
-            border-style: $button--flat-border-style;
-            border-width: $button--flat-border-width;
-            border-color: $button--flat-border-color;
+            border: $button--flat-border;
             color:  $button--flat-color;
-            padding: $button--flat-padding;
+            padding: $button-padding;
             text-shadow: none;
             box-shadow: none;
         }
@@ -99,4 +104,34 @@
                 box-shadow: 0 1px 0px #f0f0f0;
             }
         }
-    }
+
+
+        &--danger {
+            background: $button--danger-background;
+            border: $button--danger-border;
+            color:  $button--danger-color;
+            padding: $button-padding;
+            text-shadow: none;
+            box-shadow: none;
+
+            &:hover{
+                background: lighten($button--danger-color, 10);
+                color:#ffffff;
+            }
+        }
+
+
+        &--info {
+            background: $button--info-background;
+            border: $button--info-border;
+            color:  $button--info-color;
+            padding: $button-padding;
+            text-shadow: none;
+            box-shadow: none;
+
+            &:hover {
+                background: lighten($button--info-color, 10);
+                color:#ffffff;
+            }
+        }
+    }    

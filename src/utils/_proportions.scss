@@ -22,20 +22,44 @@
         7th:   0.1428571428571429
     );
 
+//  Responsive brekpoints    
+    $breakpoints: (
+      xxs: 'max-width: 480px',
+      xs:  'max-width: 768px',
+      sm:  'min-width: 768px',
+      md:  'min-width: 992px',
+      lg:  'min-width: 1200px'  
+    );
+
+
 //_ DEFINITION _________________________________________________________________________________________________________
 
 /*  utility mixin
 
     Creates a new rule at root with the prefix u- */
 
-    @mixin utility($name) {
+    @mixin utility($name, $prefix: false) {
 
-        %u-#{$name} {
-            @content;
-        }
+        @if ($prefix) {
 
-        .u-#{$name} {
-            @content;
+            %u-#{$prefix}-#{$name} {
+                @content;
+            }
+
+            .u-#{$prefix}-#{$name} {
+                @content;
+            }
+
+        } @else {
+
+            %u-#{$name} {
+                @content;
+            }
+
+            .u-#{$name} {
+                @content;
+            }            
+
         }
     }
 
@@ -62,3 +86,39 @@
     }
 
     @include createWidths();
+
+
+
+
+/*  createResponsiveWidths mixin
+
+    Generates all available widths using the given steps and for every breakpoint
+    Create the className interpolating breakpoint name for every step
+    u-breakpoint-size
+     */
+
+  @mixin createResponsiveWidths() {
+
+    @each $index, $size in $breakpoints {
+
+      @media (#{$size}) {
+          @for $key from 1 to $steps {
+              $tmpSize: floor($key / $steps*100);
+
+              @include utility(#{$tmpSize}, $index) {
+                  width: percentage($key / $steps) !important;
+              }
+          }
+          @each $width, $size in $customWidths {
+              $tmpSize: $width;
+
+              @include utility(#{$tmpSize}, $index) {
+                  width: percentage($size) !important;
+              }
+          }
+      }        
+    }
+
+  }
+  
+  @include createResponsiveWidths();    

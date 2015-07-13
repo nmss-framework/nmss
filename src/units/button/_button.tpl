@@ -10,4 +10,8 @@
     <button class="button button--inline">button button--inline</button>
     <h3 class="section-description">button--disabled</h3>
     <button class="button button--disabled">button button--disabled</button>
+    <h3 class="section-description">button--info</h3>
+    <button class="button button--info">button button--info</button>
+    <h3 class="section-description">button--danger</h3>
+    <button class="button button--danger">button button--danger</button>
 </section>
