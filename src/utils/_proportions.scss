@@ -107,7 +107,7 @@
 
               @include utility(#{$tmpSize}, $index) {
                   width: percentage($key / $steps) !important;
-              }
+              }              
           }
           @each $width, $size in $customWidths {
               $tmpSize: $width;
@@ -116,9 +116,12 @@
                   width: percentage($size) !important;
               }
           }
+
+          @include utility('hidden', $index) {
+              display: none;
+          }
       }        
     }
-
   }
   
   @include createResponsiveWidths();    
