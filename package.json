@@ -1,9 +1,9 @@
 {
   "name": "nmss",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "nmss css framework",
   "repository": {
-    "type": "git",
+    "type": "git",    
     "url": "https://github.com/nmss-framework/nmss.git"
   },
   "keywords": [

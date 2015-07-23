@@ -117,8 +117,11 @@
               }
           }
 
-          @include utility('hidden', $index) {
-              display: none;
+          @include utility('hide', $index) {
+              display: none !important;
+          }
+          @include utility('show', $index) {
+              display: inherit !important;
           }
       }        
     }
